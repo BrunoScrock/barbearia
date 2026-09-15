@@ -21,12 +21,13 @@ const CONFIG = {
   email: "[INSERIR E-MAIL]",           // Ex.: contato@quirinobarbearia.com.br
 
   /* Localização ---------------------------------------------------------- */
-  cidade: "[INSERIR CIDADE]",          // Ex.: Curitiba
-  endereco: "[INSERIR ENDEREÇO]",      // Ex.: Rua Exemplo, 123 - Bairro
-  atendimento: "[INSERIR ÁREA DE ATENDIMENTO]", // Ex.: Curitiba
+  cidade: "Curitiba",                 // Ex.: Curitiba
+  endereco: "Rua José Valle, 1334 - Santa Felicidade", // Ex.: Rua Exemplo, 123 - Bairro
+  atendimento: "Santa Felicidade, Curitiba", // Ex.: Curitiba
 
   /* Funcionamento -------------------------------------------------------- */
-  horario: "[INSERIR HORÁRIO]",        // Ex.: Ter a Sáb: 09h às 20h
+  horario: "Seg a Sex: 09h às 19h | Sáb: 09h às 17h30 | Dom: fechado", // horário completo (seção Onde estamos)
+  horarioResumo: "Seg a Sex 09h–19h · Sáb 09h–17h30", // horário resumido (badge do Hero)
 
   /* Redes Sociais -------------------------------------------------------- */
   instagram: "",

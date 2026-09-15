@@ -4,9 +4,9 @@
 
 ## Sobre
 
-Barbearia moderna e profissional especializada em cortes masculinos, barba e
-cuidados pessoais. Atendimento personalizado, ambiente confortável e
-acabamento de qualidade.
+Barbearia Quirino em Santa Felicidade, Curitiba. Especializada em cortes
+masculinos, degradê, fade, social, barba com navalha e cuidados capilares.
+Barbearia e cabeleireiro com atendimento de qualidade em Santa Felicidade.
 
 ## Serviços
 
@@ -19,10 +19,10 @@ acabamento de qualidade.
 
 ## Localização
 
-- Cidade: [INSERIR CIDADE]
-- Endereço: [INSERIR ENDEREÇO]
-- Área de atendimento: [INSERIR ÁREA DE ATENDIMENTO]
-- Horário de funcionamento: [INSERIR HORÁRIO]
+- Cidade: Curitiba (PR)
+- Endereço: Rua José Valle, 1334 - Santa Felicidade, Curitiba - PR, 82020-250
+- Área de atendimento: Santa Felicidade, Curitiba
+- Horário de funcionamento: Segunda a sexta: 09h às 19h | Sábado: 09h às 17h30 | Domingo: fechado
 
 ## Contato
 

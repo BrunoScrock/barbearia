@@ -104,7 +104,7 @@ function aplicarConfiguracao() {
 
   // Horário
   const badgeHorario = document.getElementById("badge-horario");
-  if (badgeHorario) badgeHorario.textContent = CONFIG.horario || "Atendimento profissional";
+  if (badgeHorario) badgeHorario.textContent = CONFIG.horarioResumo || CONFIG.horario || "Atendimento profissional";
 
   const badgeHorario2 = document.getElementById("badge-horario-2");
   if (badgeHorario2) badgeHorario2.textContent = CONFIG.horario || "[INSERIR HORÁRIO]";
