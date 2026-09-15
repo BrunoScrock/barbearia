@@ -1,0 +1,35 @@
+# Quirino Barbearia
+
+> Cortes masculinos, barba e cuidados para quem valoriza seu estilo.
+
+## Sobre
+
+Barbearia moderna e profissional especializada em cortes masculinos, barba e
+cuidados pessoais. Atendimento personalizado, ambiente confortável e
+acabamento de qualidade.
+
+## Serviços
+
+- Corte Masculino
+- Barba
+- Corte + Barba (Combo)
+- Acabamento
+- Sobrancelha
+- Lavagem / Finalização
+
+## Localização
+
+- Cidade: [INSERIR CIDADE]
+- Endereço: [INSERIR ENDEREÇO]
+- Área de atendimento: [INSERIR ÁREA DE ATENDIMENTO]
+- Horário de funcionamento: [INSERIR HORÁRIO]
+
+## Contato
+
+- WhatsApp: [INSERIR WHATSAPP] (formato 55 + DDD + número)
+- Telefone: [INSERIR TELEFONE]
+- E-mail: [INSERIR E-MAIL]
+
+## Site
+
+https://[DOMINIO]/

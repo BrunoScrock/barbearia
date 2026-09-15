@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Substitua [DOMINIO] pelo endereço real do site (ex.: https://brunoscrock.github.io/quirino-barbearia/)
+Sitemap: https://[DOMINIO]/sitemap.xml

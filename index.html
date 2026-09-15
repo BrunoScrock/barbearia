@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quirino Barbearia | Cortes Masculinos e Barba</title>
+
+  <!-- SEO -->
+  <meta name="description" content="[INSERIR DESCRIÇÃO DA EMPRESA] Quirino Barbearia — cortes masculinos, barba e cuidados para quem valoriza seu estilo. Agende seu horário pelo WhatsApp.">
+  <meta name="keywords" content="barbearia, corte masculino, barba, cortes de cabelo, degradê, combo corte e barba, sobrancelha, [INSERIR CIDADE]">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Quirino Barbearia">
+  <link rel="canonical" href="">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/logo-quirino.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Quirino Barbearia | Cortes Masculinos e Barba">
+  <meta property="og:description" content="[INSERIR DESCRIÇÃO DA EMPRESA] Cortes masculinos, barba e cuidados para quem valoriza seu estilo.">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Quirino Barbearia — Cortes Masculinos e Barba">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Quirino Barbearia | Cortes Masculinos e Barba">
+  <meta name="twitter:description" content="[INSERIR DESCRIÇÃO DA EMPRESA]">
+  <meta name="twitter:image" content="">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Ícones Lucide -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org (dados estruturados) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Barbershop",
+    "name": "Quirino Barbearia",
+    "description": "[INSERIR DESCRIÇÃO DA EMPRESA]",
+    "url": "",
+    "telephone": "[INSERIR TELEFONE]",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[INSERIR ENDEREÇO]",
+      "addressLocality": "[INSERIR CIDADE]",
+      "addressRegion": "",
+      "addressCountry": "BR"
+    },
+    "areaServed": "[INSERIR ÁREA DE ATENDIMENTO]",
+    "openingHours": "[INSERIR HORÁRIO]",
+    "priceRange": ""
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============================================================
+       CABEÇALHO FIXO
+  ============================================================ -->
+  <header id="topo">
+    <div class="container header-content">
+      <a href="#inicio" class="logo" aria-label="Página inicial — Quirino Barbearia">
+        <span class="logo-box">
+          <img src="assets/images/logo/logo-quirino.svg" alt="Logo Quirino Barbearia" width="50" height="50">
+        </span>
+        <span class="logo-text">
+          <strong id="logo-nome">Quirino</strong>
+          <em id="logo-sub">Barbearia</em>
+        </span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#atendimento">Atendimento</a></li>
+          <li><a href="#agendamento">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#" class="btn-header" onclick="enviarAgendamento(); return false;" aria-label="Agendar horário via WhatsApp">
+          <i data-lucide="calendar" aria-hidden="true"></i>
+          <span>Agendar Horário</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO — SEÇÃO PRINCIPAL
+    ============================================================ -->
+    <section class="hero" id="inicio">
+      <!-- Imagem de fundo (IMAGEM DEMONSTRATIVA — substitua por foto real em assets/images/hero/) -->
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1920&q=80" alt="Barbeiro trabalhando na Quirino Barbearia" fetchpriority="high">
+      </div>
+
+      <!-- Overlay escuro + gradiente + vinheta -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <!-- Partículas / iluminação -->
+      <div class="hero-particles" aria-hidden="true"></div>
+
+      <!-- Brilhos gradiente -->
+      <div class="hero-glow glow-1" aria-hidden="true"></div>
+      <div class="hero-glow glow-2" aria-hidden="true"></div>
+
+      <!-- Conteúdo -->
+      <div class="hero-content">
+        <div class="container hero-grid">
+
+          <div class="hero-text">
+            <div class="hero-badges">
+              <span class="badge"><i data-lucide="scissors" aria-hidden="true"></i> <span id="badge-horario">[INSERIR HORÁRIO]</span></span>
+              <span class="badge"><i data-lucide="award" aria-hidden="true"></i> Estilo e precisão</span>
+              <span class="badge"><i data-lucide="shield-check" aria-hidden="true"></i> Atendimento personalizado</span>
+            </div>
+
+            <h1 class="hero-title" aria-label="Quirino Barbearia">
+              <span class="line line-1"><span class="line-inner">Quirino</span></span>
+              <span class="line line-2"><span class="line-inner">Barbearia</span></span>
+            </h1>
+
+            <p class="hero-subtitle" id="hero-subtitulo">Cortes masculinos, barba e cuidados para quem valoriza seu estilo.</p>
+
+            <div class="hero-ctas">
+              <a href="#" class="btn-cta btn-cta-primary" onclick="enviarAgendamento(); return false;">
+                <i data-lucide="calendar-check" aria-hidden="true"></i> Agendar Horário
+              </a>
+              <a href="#servicos" class="btn-cta btn-cta-secondary">
+                <i data-lucide="arrow-down" aria-hidden="true"></i> Conhecer Serviços
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-photo">
+            <div class="hero-photo-wrapper">
+              <!-- [INSERIR FOTO] Foto lateral do hero -->
+              <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=800&q=80" alt="Ambiente da Quirino Barbearia">
+            </div>
+            <div class="hero-photo-badge">
+              <i data-lucide="crown" aria-hidden="true"></i>
+              <span>Estilo, precisão e personalidade</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DIFERENCIAIS
+    ============================================================ -->
+    <section class="differentials" id="diferenciais">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="section-eyebrow">Diferenciais</span>
+          <h2>Por que escolher a <em>Quirino Barbearia</em>?</h2>
+          <p>Cuidado, técnica e uma experiência pensada para o seu estilo</p>
+        </div>
+
+        <div class="diff-grid">
+
+          <article class="diff-card">
+            <div class="diff-icon"><i data-lucide="user-check" aria-hidden="true"></i></div>
+            <h3>Atendimento Personalizado</h3>
+            <p>Cada cliente é recebido com atenção às suas preferências, do corte ao acabamento final.</p>
+          </article>
+
+          <article class="diff-card">
+            <div class="diff-icon"><i data-lucide="badge-check" aria-hidden="true"></i></div>
+            <h3>Profissionalismo e Técnica</h3>
+            <p>Execução cuidadosa e técnica apurada para que o resultado seja sempre do seu agrado.</p>
+          </article>
+
+          <article class="diff-card">
+            <div class="diff-icon"><i data-lucide="armchair" aria-hidden="true"></i></div>
+            <h3>Ambiente Confortável</h3>
+            <p>Um espaço pensado para o seu conforto, do atendimento ao momento de relaxar.</p>
+          </article>
+
+          <article class="diff-card">
+            <div class="diff-icon"><i data-lucide="target" aria-hidden="true"></i></div>
+            <h3>Precisão nos Cortes</h3>
+            <p>Detalhes e linhas bem definidas, com acabamento cuidadoso em cada etapa.</p>
+          </article>
+
+          <article class="diff-card">
+            <div class="diff-icon"><i data-lucide="shield-check" aria-hidden="true"></i></div>
+            <h3>Higiene e Segurança</h3>
+            <p>Materiais higienizados e cuidados com a sua segurança durante todo o atendimento.</p>
+          </article>
+
+          <article class="diff-card">
+            <div class="diff-icon"><i data-lucide="sparkles" aria-hidden="true"></i></div>
+            <h3>Estilo e Modernidade</h3>
+            <p>Tendências e clássicos combinados para valorizar o seu visual com personalidade.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SOBRE A BARBEARIA
+    ============================================================ -->
+    <section class="about-section" id="sobre">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-image reveal-left">
+            <!-- [INSERIR FOTO] Foto do ambiente/equipe da barbearia -->
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80" alt="Estrutura e ambiente da Quirino Barbearia">
+            <div class="about-image-overlay" aria-hidden="true"></div>
+            <div class="about-frame" aria-hidden="true"></div>
+          </div>
+
+          <div class="about-content reveal-right">
+            <span class="about-tag">Sobre a Quirino Barbearia</span>
+            <h2>Cuidado e estilo em cada detalhe</h2>
+            <p>[INSERIR DESCRIÇÃO DA EMPRESA] A Quirino Barbearia nasceu para proporcionar uma experiência completa de cuidado masculino, unindo técnica, estilo e atendimento personalizado.</p>
+            <p>Mais do que um corte, entregamos confiança: você sai daqui com o visual alinhado ao seu estilo e com a sensação de ter sido bem atendido.</p>
+
+            <div class="about-highlights">
+              <div class="about-highlight-item">
+                <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                <span>Cortes personalizados</span>
+              </div>
+              <div class="about-highlight-item">
+                <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                <span>Barba com acabamento</span>
+              </div>
+              <div class="about-highlight-item">
+                <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                <span>Atendimento individual</span>
+              </div>
+              <div class="about-highlight-item">
+                <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                <span>Ambiente acolhedor</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EXPERIÊNCIA DO CLIENTE
+    ============================================================ -->
+    <section class="experience-section" id="experiencia">
+      <div class="container">
+        <div class="experience-grid">
+
+          <div class="experience-media reveal-left">
+            <!-- [INSERIR FOTO] Foto da experiência no ambiente da barbearia -->
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=80" alt="Momento de atendimento na Quirino Barbearia">
+            <div class="experience-quote">
+              Mais do que um corte. Um momento para cuidar do seu estilo.
+            </div>
+          </div>
+
+          <div class="experience-content reveal-right">
+            <span class="about-tag">Experiência do Cliente</span>
+            <h2>Um momento para cuidar do seu estilo</h2>
+            <p>Na Quirino Barbearia, o atendimento é feito para você se sentir bem do início ao fim — desde a recepção até o resultado final.</p>
+
+            <div class="experience-feature">
+              <div class="experience-feature-icon"><i data-lucide="scissors" aria-hidden="true"></i></div>
+              <div>
+                <strong>Corte sob medida</strong>
+                <span>Orientação para escolher o estilo que combina com você.</span>
+              </div>
+            </div>
+            <div class="experience-feature">
+              <div class="experience-feature-icon"><i data-lucide="watch" aria-hidden="true"></i></div>
+              <div>
+                <strong>Respeito ao seu tempo</strong>
+                <span>Atendimento organizado e sem pressa, com pontualidade.</span>
+              </div>
+            </div>
+            <div class="experience-feature">
+              <div class="experience-feature-icon"><i data-lucide="coffee" aria-hidden="true"></i></div>
+              <div>
+                <strong>Ambiente à vontade</strong>
+                <span>Um espaço confortável para relaxar durante o atendimento.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROCESSO — COMO FUNCIONA
+    ============================================================ -->
+    <section class="steps-section" id="processo">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="section-eyebrow">Atendimento</span>
+          <h2>Como funciona?</h2>
+          <p>Um processo simples e descomplicado, do agendamento ao resultado final</p>
+        </div>
+
+        <div class="steps-grid">
+
+          <article class="step-item">
+            <span class="step-number">01</span>
+            <div class="step-icon"><i data-lucide="clipboard-list" aria-hidden="true"></i></div>
+            <h3>Escolha o serviço</h3>
+            <p>Corte, barba, combo ou outro cuidado. Escolha o que você precisa.</p>
+          </article>
+
+          <article class="step-item">
+            <span class="step-number">02</span>
+            <div class="step-icon"><i data-lucide="calendar-check" aria-hidden="true"></i></div>
+            <h3>Agende seu horário</h3>
+            <p>Envie uma mensagem pelo WhatsApp e confirme o melhor horário.</p>
+          </article>
+
+          <article class="step-item">
+            <span class="step-number">03</span>
+            <div class="step-icon"><i data-lucide="store" aria-hidden="true"></i></div>
+            <h3>Venha para a barbearia</h3>
+            <p>Chegue no horário combinado e seja recebido com seu atendimento.</p>
+          </article>
+
+          <article class="step-item">
+            <span class="step-number">04</span>
+            <div class="step-icon"><i data-lucide="sparkles" aria-hidden="true"></i></div>
+            <h3>Saia com seu novo visual</h3>
+            <p>Aproveite o resultado: estilo alinhado e confiança renovada.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVIÇOS
+    ============================================================ -->
+    <section class="services-section" id="servicos">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="section-eyebrow">Serviços</span>
+          <h2>Nossos <em>Serviços</em></h2>
+          <p>Cuidados pensados para o seu estilo e a sua rotina</p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Corte Masculino -->
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="scissors" aria-hidden="true"></i></div>
+            <h3>Corte Masculino</h3>
+            <p>Corte personalizado, do clássico ao moderno, com finalização e acabamento cuidadoso.</p>
+            <ul class="service-list">
+              <li>Corte ajustado ao seu estilo</li>
+              <li>Degradê e repicado</li>
+              <li>Acabamento na nuca e nas laterais</li>
+              <li>Finalização com produtos de qualidade</li>
+            </ul>
+            <a href="#" class="btn-service" onclick="enviarAgendamento('Corte'); return false;">
+              Agendar <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <!-- Barba -->
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="award" aria-hidden="true"></i></div>
+            <h3>Barba</h3>
+            <p>Modelagem e acabamento da barba com definição e atenção ao detalhe.</p>
+            <ul class="service-list">
+              <li>Desenho e modelagem</li>
+              <li>Acabamento com navalha</li>
+              <li>Alinhamento do contorno</li>
+              <li>Hidratação e cuidados</li>
+            </ul>
+            <a href="#" class="btn-service" onclick="enviarAgendamento('Barba'); return false;">
+              Agendar <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <!-- Combo Corte + Barba -->
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="flame" aria-hidden="true"></i></div>
+            <h3>Corte + Barba</h3>
+            <p>O combo completo para um visual harmônico, com corte e barba no mesmo atendimento.</p>
+            <ul class="service-list">
+              <li>Corte personalizado</li>
+              <li>Barba modelada e finalizada</li>
+              <li>Visual completo e alinhado</li>
+              <li>Otimização do seu tempo</li>
+            </ul>
+            <a href="#" class="btn-service" onclick="enviarAgendamento('Combo'); return false;">
+              Agendar <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <!-- Acabamento -->
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="sparkles" aria-hidden="true"></i></div>
+            <h3>Acabamento</h3>
+            <p>Detalhamento e finalização para um resultado impecável no corte ou na barba.</p>
+            <ul class="service-list">
+              <li>Contornos bem definidos</li>
+              <li>Acabamento na linha do cabelo</li>
+              <li>Finalização com estilo</li>
+              <li>Detalhes que fazem a diferença</li>
+            </ul>
+            <a href="#" class="btn-service" onclick="enviarAgendamento('Acabamento'); return false;">
+              Agendar <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <!-- Sobrancelha -->
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="eye" aria-hidden="true"></i></div>
+            <h3>Sobrancelha</h3>
+            <p>Design e acabamento masculino para valorizar o olhar com naturalidade.</p>
+            <ul class="service-list">
+              <li>Design e simetria</li>
+              <li>Limpeza sem exagero</li>
+              <li>Acabamento natural</li>
+              <li>Harmonia com o rosto</li>
+            </ul>
+            <a href="#" class="btn-service" onclick="enviarAgendamento('Sobrancelha'); return false;">
+              Agendar <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <!-- Lavagem / Finalização -->
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="droplets" aria-hidden="true"></i></div>
+            <h3>Lavagem / Finalização</h3>
+            <p>Complemente o cuidado com lavagem e finalização para terminar o visual.</p>
+            <ul class="service-list">
+              <li>Lavagem com produtos adequados</li>
+              <li>Finalização do penteado</li>
+              <li>Estilização do visual</li>
+              <li>Cuidado com fios e couro cabeludo</li>
+            </ul>
+            <a href="#" class="btn-service" onclick="enviarAgendamento('Lavagem'); return false;">
+              Agendar <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PORTFÓLIO / GALERIA (COVERFLOW + LIGHTBOX)
+    ============================================================ -->
+    <section class="portfolio-section" id="galeria">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="section-eyebrow">Galeria</span>
+          <h2>Nosso <em>Trabalho</em></h2>
+          <p>Conheça o padrão e a qualidade dos nossos cortes e estilos</p>
+        </div>
+
+        <div class="gallery-filters" role="group" aria-label="Filtros da galeria">
+          <button type="button" class="filter-btn active" data-galeria-filtro="Todos" aria-pressed="true">Todos</button>
+          <button type="button" class="filter-btn" data-galeria-filtro="Corte" aria-pressed="false">Cortes</button>
+          <button type="button" class="filter-btn" data-galeria-filtro="Barba" aria-pressed="false">Barbas</button>
+          <button type="button" class="filter-btn" data-galeria-filtro="Combo" aria-pressed="false">Combos</button>
+          <button type="button" class="filter-btn" data-galeria-filtro="Estilo" aria-pressed="false">Estilos</button>
+        </div>
+
+        <div class="coverflow" id="coverflow" aria-label="Galeria de trabalhos da Quirino Barbearia">
+          <div class="coverflow-ambience" aria-hidden="true">
+            <img id="coverflow-bg" src="" alt="">
+            <div class="coverflow-ambience-overlay"></div>
+          </div>
+
+          <div class="coverflow-stage" id="coverflow-stage"></div>
+
+          <button class="coverflow-arrow prev" id="coverflow-prev" aria-label="Trabalho anterior">
+            <i data-lucide="chevron-left" aria-hidden="true"></i>
+          </button>
+          <button class="coverflow-arrow next" id="coverflow-next" aria-label="Próximo trabalho">
+            <i data-lucide="chevron-right" aria-hidden="true"></i>
+          </button>
+
+          <div class="coverflow-dots" id="coverflow-dots" role="tablist" aria-label="Navegar entre os trabalhos"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         LOCALIZAÇÃO E ATENDIMENTO
+    ============================================================ -->
+    <section class="coverage-section" id="atendimento">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="section-eyebrow">Atendimento</span>
+          <h2>Onde <em>estamos</em></h2>
+          <p id="coverage-text">[INSERIR ÁREA DE ATENDIMENTO]</p>
+        </div>
+
+        <div class="coverage-grid">
+
+          <div class="coverage-info">
+            <div class="coverage-info-item">
+              <div class="coverage-info-icon"><i data-lucide="map-pin" aria-hidden="true"></i></div>
+              <div class="coverage-info-text">
+                <h4>Localização</h4>
+                <p id="footer-endereco">[INSERIR ENDEREÇO] · [INSERIR CIDADE]</p>
+              </div>
+            </div>
+
+            <div class="coverage-info-item">
+              <div class="coverage-info-icon"><i data-lucide="clock" aria-hidden="true"></i></div>
+              <div class="coverage-info-text">
+                <h4>Horário de Funcionamento</h4>
+                <p id="badge-horario-2">[INSERIR HORÁRIO]</p>
+              </div>
+            </div>
+
+            <div class="coverage-info-item">
+              <div class="coverage-info-icon"><i data-lucide="phone" aria-hidden="true"></i></div>
+              <div class="coverage-info-text">
+                <h4>Telefone</h4>
+                <p><a href="#" class="js-phone">[INSERIR TELEFONE]</a></p>
+              </div>
+            </div>
+
+            <div class="coverage-info-item">
+              <div class="coverage-info-icon"><i data-lucide="mail" aria-hidden="true"></i></div>
+              <div class="coverage-info-text">
+                <h4>E-mail</h4>
+                <p><a href="mailto:[INSERIR E-MAIL]" class="js-email">[INSERIR E-MAIL]</a></p>
+              </div>
+            </div>
+
+            <div class="coverage-info-item">
+              <div class="coverage-info-icon"><i data-lucide="message-circle" aria-hidden="true"></i></div>
+              <div class="coverage-info-text">
+                <h4>WhatsApp</h4>
+                <p><a href="#" id="coverage-whatsapp" onclick="enviarAgendamento(); return false;">Agendar pelo WhatsApp</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mapa: substitua as coordenadas quando tiver endereço real -->
+          <div class="coverage-map">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-47.00%2C-23.70%2C-46.50%2C-23.40&layer=mapnik&marker=-23.55%2C-46.63"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa de localização da Quirino Barbearia"
+              allowfullscreen></iframe>
+            <a class="coverage-map-link" href="https://www.openstreetmap.org/?mlat=-23.55&mlon=-46.63#map=11/-23.55/-46.63" target="_blank" rel="noopener noreferrer">
+              Como chegar
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FORMULÁRIO DE AGENDAMENTO
+    ============================================================ -->
+    <section class="form-section" id="agendamento">
+      <div class="container">
+        <div class="form-grid">
+
+          <div class="form-info">
+            <span class="about-tag">Agendamento</span>
+            <h2>Agende seu horário</h2>
+            <p>Preencha o formulário abaixo e envie sua solicitação diretamente pelo WhatsApp. Rápido, prático e sem burocracia.</p>
+
+            <div class="form-info-features">
+              <div class="form-feature">
+                <div class="form-feature-icon"><i data-lucide="message-circle" aria-hidden="true"></i></div>
+                <span>Confirmação rápida pelo WhatsApp</span>
+              </div>
+              <div class="form-feature">
+                <div class="form-feature-icon"><i data-lucide="calendar-check" aria-hidden="true"></i></div>
+                <span>Escolha o melhor horário</span>
+              </div>
+              <div class="form-feature">
+                <div class="form-feature-icon"><i data-lucide="user-check" aria-hidden="true"></i></div>
+                <span>Atendimento personalizado</span>
+              </div>
+              <div class="form-feature">
+                <div class="form-feature-icon"><i data-lucide="map-pin" aria-hidden="true"></i></div>
+                <span>[INSERIR CIDADE]</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h3>Solicitar Agendamento</h3>
+            <form id="formAgendamento" onsubmit="enviarFormulario(event)">
+              <div class="form-group">
+                <label for="formNome">Nome *</label>
+                <input type="text" id="formNome" name="nome" placeholder="Seu nome completo" autocomplete="name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="formServico">Serviço *</label>
+                <select id="formServico" name="servico" required>
+                  <option value="" selected disabled>Selecione o serviço</option>
+                  <option value="Corte Masculino">Corte Masculino</option>
+                  <option value="Barba">Barba</option>
+                  <option value="Corte + Barba">Corte + Barba</option>
+                  <option value="Acabamento">Acabamento</option>
+                  <option value="Sobrancelha">Sobrancelha</option>
+                  <option value="Lavagem / Finalização">Lavagem / Finalização</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="formData">Data desejada</label>
+                <input type="date" id="formData" name="data">
+              </div>
+
+              <div class="form-group">
+                <label for="formHorario">Horário desejado</label>
+                <input type="time" id="formHorario" name="horario">
+              </div>
+
+              <div class="form-group">
+                <label for="formTelefone">Telefone *</label>
+                <input type="tel" id="formTelefone" name="telefone" placeholder="(00) 00000-0000" autocomplete="tel" required>
+              </div>
+
+              <div class="form-group">
+                <label for="formMensagem">Mensagem</label>
+                <textarea id="formMensagem" name="mensagem" placeholder="Alguma preferência ou observação?" rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="btn-form-submit">
+                <i data-lucide="send" aria-hidden="true"></i> Agendar pelo WhatsApp
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA FINAL
+    ============================================================ -->
+    <section class="final-cta">
+      <div class="container">
+        <h2>Seu próximo corte <em>começa aqui.</em></h2>
+        <p>Agende seu horário na Quirino Barbearia e cuide do seu estilo.</p>
+        <a href="#" class="btn-cta-whatsapp" onclick="enviarAgendamento(); return false;">
+          <i data-lucide="message-circle" aria-hidden="true"></i> Agendar Horário
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       RODAPÉ
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="#inicio" class="footer-logo">
+          <span class="logo-box">
+            <img src="assets/images/logo/logo-quirino.svg" alt="Logo Quirino Barbearia" width="50" height="50">
+          </span>
+          <span class="footer-logo-text">
+            <strong id="footer-nome">Quirino Barbearia</strong>
+            <em id="footer-sub">Barbearia</em>
+          </span>
+        </a>
+        <p id="slogan-footer">Cortes masculinos, barba e cuidados para quem valoriza seu estilo.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Rodapé — Navegação">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#atendimento">Atendimento</a></li>
+          <li><a href="#agendamento">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col footer-contato">
+        <h4>Contato</h4>
+        <ul>
+          <li>
+            <i data-lucide="message-circle" aria-hidden="true"></i>
+            <a href="#" id="footer-whatsapp-link" onclick="enviarAgendamento(); return false;">Atendimento via WhatsApp</a>
+          </li>
+          <li>
+            <i data-lucide="phone" aria-hidden="true"></i>
+            <a href="#" class="js-phone">[INSERIR TELEFONE]</a>
+          </li>
+          <li>
+            <i data-lucide="mail" aria-hidden="true"></i>
+            <a href="#" class="js-email">[INSERIR E-MAIL]</a>
+          </li>
+          <li>
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+            <span id="footer-endereco-2">[INSERIR ENDEREÇO]</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-contato">
+        <h4>Redes Sociais</h4>
+        <div class="footer-social">
+          <a href="#" id="footer-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Quirino Barbearia">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" id="footer-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook da Quirino Barbearia">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="ano-atual">2026</span> <span id="copyright-nome">Quirino Barbearia</span>. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BOTÃO FLUTUANTE WHATSAPP
+  ============================================================ -->
+  <a href="#" id="whatsapp-float" class="whatsapp-float" aria-label="Contato via WhatsApp — Quirino Barbearia" onclick="enviarAgendamento(); return false;">
+    <span class="whatsapp-float-tip">Agende seu horário</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
