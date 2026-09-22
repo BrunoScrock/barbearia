@@ -5,7 +5,8 @@
 # fotos reais da barbearia antes da publicação.
 
 # Pasta: assets/images/logo/
-#   - logoQuirino.png    (logo oficial — usada no cabeçalho, rodapé e favicon)
+#   - logoQuirino.png    (logo oficial — usada no cabeçalho e rodapé)
+#   - favicon.png        (logo com cantos arredondados — usada na aba do navegador)
 
 # Pasta: assets/images/hero/
 #   - Foto de fundo da primeira tela (1920px de largura ideal).
