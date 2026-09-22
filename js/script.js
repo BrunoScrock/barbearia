@@ -86,7 +86,7 @@ function aplicarConfiguracao() {
 
   if (logoNome) logoNome.textContent = CONFIG.logoNome;
   if (logoSub) logoSub.textContent = CONFIG.subtitulo;
-  if (footerNome) footerNome.textContent = CONFIG.empresa;
+  if (footerNome) footerNome.textContent = CONFIG.logoNome;
   if (footerSub) footerSub.textContent = CONFIG.subtitulo;
   if (copyrightNome) copyrightNome.textContent = CONFIG.empresa;
 
