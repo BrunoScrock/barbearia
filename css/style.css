@@ -2034,9 +2034,10 @@ body.no-scroll {
    -------------------------------------------------------------------------- */
 .final-cta {
   background:
-    linear-gradient(rgba(8, 8, 10, 0.82), rgba(8, 8, 10, 0.82)),
-    radial-gradient(ellipse at 20% 50%, rgba(var(--gold-rgb), 0.25), transparent 50%),
-    radial-gradient(ellipse at 80% 50%, rgba(var(--gold-rgb), 0.18), transparent 50%),
+    linear-gradient(rgba(8, 8, 10, 0.8), rgba(8, 8, 10, 0.88)),
+    radial-gradient(ellipse at 20% 50%, rgba(var(--gold-rgb), 0.2), transparent 50%),
+    radial-gradient(ellipse at 80% 50%, rgba(var(--gold-rgb), 0.14), transparent 50%),
+    url("../images/fachada.jpg") center / cover no-repeat,
     var(--dark);
   color: var(--white);
   text-align: center;
