@@ -128,7 +128,7 @@ Formato: **55 + DDD + número**, somente dígitos.
 
 ## Como alterar o link de avaliação no Google
 
-Os botões "Nos avalie" (cabeçalho, hero, seção de contato e botão flutuante)
+Os botões "Nos avalie" (cabeçalho, hero e botão flutuante)
 apontam para o link em **`js/config.js`**:
 
 ```javascript
@@ -149,8 +149,7 @@ copie o link (ou use o link do formulário de "Avaliar").
 - Galeria **Coverflow 3D** com autoplay, setas, dots, swipe e teclado
 - **Lightbox** com contador, miniaturas e navegação
 - Filtros de galeria (Todos, Cortes, Barbas, Combos, Estilos)
-- Seção de contato com explicitação do atendimento por ordem de chegada (sem agendamento)
-- Botões "Nos avalie" (cabeçalho, hero, contato e botão flutuante) para avaliação no Google
+- Botões "Nos avalie" (cabeçalho, hero e botão flutuante) para avaliação no Google
 - Botão flutuante em vidro fosco (fundo cinza) com ícone de estrela
 - Botão "Como chegar" com mapa OpenStreetMap
 - SEO: Schema.org, Open Graph, Twitter Cards, sitemap, robots e llms.txt

@@ -2031,87 +2031,7 @@ body.no-scroll {
 }
 
 /* --------------------------------------------------------------------------
-    13b. CONTATO — ATENDIMENTO POR ORDEM DE CHEGADA
-   -------------------------------------------------------------------------- */
-.order-section {
-  background: var(--graphite);
-  padding: 100px 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.order-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse at 100% 0%, rgba(var(--gold-rgb), 0.06), transparent 55%);
-  pointer-events: none;
-}
-
-.order-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 50px;
-  align-items: start;
-  position: relative;
-  z-index: 1;
-}
-
-.order-info h2 {
-  font-family: var(--font-display);
-  font-size: 2.6rem;
-  font-weight: 400;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  color: var(--white);
-  margin-bottom: 16px;
-  line-height: 1.1;
-}
-
-.order-info h2 em {
-  font-style: normal;
-  color: var(--gold);
-}
-
-.order-info > p {
-  color: var(--text-muted);
-  font-size: 1rem;
-  margin-bottom: 28px;
-  line-height: 1.7;
-}
-
-.order-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin-bottom: 34px;
-}
-
-.order-list li {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: var(--white);
-  font-weight: 600;
-  font-size: 0.95rem;
-}
-
-.order-list li i {
-  width: 20px;
-  height: 20px;
-  color: var(--gold-light);
-  flex-shrink: 0;
-}
-
-.order-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-/* --------------------------------------------------------------------------
-   14. CTA FINAL
+    14. CTA FINAL
    -------------------------------------------------------------------------- */
 .final-cta {
   background:
@@ -2432,7 +2352,6 @@ body.no-scroll {
     gap: 40px;
   }
 
-  .order-grid,
   .coverage-grid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -2602,7 +2521,6 @@ body.no-scroll {
   .services-section,
   .portfolio-section,
   .coverage-section,
-  .order-section,
   .about-section,
   .experience-section,
   .steps-section {
@@ -2638,7 +2556,6 @@ body.no-scroll {
     grid-template-columns: 1fr;
   }
 
-  .order-grid,
   .coverage-grid {
     grid-template-columns: 1fr;
   }

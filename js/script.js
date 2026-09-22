@@ -102,9 +102,6 @@ function aplicarConfiguracao() {
   const badgeHorario2 = document.getElementById("badge-horario-2");
   if (badgeHorario2) badgeHorario2.textContent = CONFIG.horario || "[INSERIR HORÁRIO]";
 
-  const orderHorario = document.getElementById("order-horario");
-  if (orderHorario) orderHorario.textContent = CONFIG.horario || "[INSERIR HORÁRIO]";
-
   // Área de atendimento
   const coverageText = document.getElementById("coverage-text");
   if (coverageText) {
@@ -146,11 +143,6 @@ function aplicarConfiguracao() {
 
   if (enderecoFooter2 && temEndereco) {
     enderecoFooter2.textContent = CONFIG.endereco;
-  }
-
-  const orderEndereco = document.getElementById("order-endereco");
-  if (orderEndereco && temEndereco) {
-    orderEndereco.textContent = CONFIG.endereco + (CONFIG.cidade && !String(CONFIG.cidade).startsWith("[INSERIR") ? " · " + CONFIG.cidade : "");
   }
 
   // Redes sociais
@@ -621,7 +613,6 @@ function iniciarReveal() {
     ".services-grid > *",
     ".about-grid > *",
     ".coverage-grid > *",
-    ".order-grid > *",
     ".steps-grid > *",
     ".process-item",
     ".section-title",
