@@ -35,8 +35,7 @@ const CONFIG = {
   horarioResumo: "Seg a Sex 09h–19h · Sáb 09h–17h30", // horário resumido (badge do Hero)
 
   /* Redes Sociais -------------------------------------------------------- */
-  instagram: "",
-  facebook: "",
+  instagram: "https://www.instagram.com/quirino.barbearia/",
 
   /* Mensagens do WhatsApp ------------------------------------------------ */
   // A barbearia não trabalha com agendamento: o atendimento é por ordem de

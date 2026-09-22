@@ -149,9 +149,6 @@ function aplicarConfiguracao() {
   const instagram = document.getElementById("footer-instagram");
   if (instagram && CONFIG.instagram) instagram.setAttribute("href", CONFIG.instagram);
 
-  const facebook = document.getElementById("footer-facebook");
-  if (facebook && CONFIG.facebook) facebook.setAttribute("href", CONFIG.facebook);
-
   // Ano atual
   const anoAtual = document.getElementById("ano-atual");
   if (anoAtual) anoAtual.textContent = new Date().getFullYear();

@@ -71,7 +71,6 @@ const CONFIG = {
   horario: "",
   avaliacaoUrl: "",  // link de avaliação no Google ("Nos avalie")
   instagram: "",
-  facebook: "",
   // mensagens do WhatsApp...
 };
 ```
