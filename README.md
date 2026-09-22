@@ -65,7 +65,6 @@ const CONFIG = {
   empresa: "Quirino Barbearia",
   whatsapp: "",      // 55 + DDD + número (somente dígitos)
   telefone: "",
-  email: "",
   cidade: "",
   endereco: "",
   atendimento: "",

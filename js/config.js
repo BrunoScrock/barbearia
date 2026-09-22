@@ -16,9 +16,8 @@ const CONFIG = {
   slogan: "Cortes masculinos, barba e cuidados para quem valoriza seu estilo.",
 
   /* Contato -------------------------------------------------------------- */
-  whatsapp: "",                // Formato: 55 + DDD + número (somente dígitos). Ex.: 5541999999999
-  telefone: "[INSERIR TELEFONE]",       // Ex.: (41) 99999-9999
-  email: "[INSERIR E-MAIL]",           // Ex.: contato@quirinobarbearia.com.br
+  whatsapp: "5541995205096",          // Formato: 55 + DDD + número (somente dígitos). Ex.: 5541999999999
+  telefone: "(41) 99520-5096",        // Ex.: (41) 99999-9999
 
   /* Avaliação no Google -------------------------------------------------- */
   // Link do botão "Nos avalie" (perfil da barbearia no Google Maps).

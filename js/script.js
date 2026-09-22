@@ -120,14 +120,6 @@ function aplicarConfiguracao() {
     }
   });
 
-  // E-mail (links com classe .js-email)
-  document.querySelectorAll(".js-email").forEach(function (el) {
-    if (String(CONFIG.email || "").includes("@")) {
-      el.textContent = CONFIG.email;
-      el.setAttribute("href", "mailto:" + CONFIG.email);
-    }
-  });
-
   // WhatsApp no rodapé
   const numero = obterWhatsapp();
   if (numero.length >= 10) {
