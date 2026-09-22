@@ -196,7 +196,7 @@ header.glass {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 16px rgba(var(--gold-rgb), 0.18), inset 0 0 18px rgba(var(--gold-rgb), 0.06);
+  box-shadow: 0 4px 16px rgba(var(--gold-rgb), 0.18);
   flex-shrink: 0;
   overflow: hidden;
 }
