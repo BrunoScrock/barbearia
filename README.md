@@ -88,25 +88,32 @@ assets/images/servicos/  -> fotos dos serviços (se usadas)
 assets/images/portfolio/ -> fotos dos trabalhos (usadas via js/config.js)
 ```
 
-**Atenção:** as imagens de fundo do Hero e da seção "Sobre" apontam para URLs
-da Unsplash dentro do `index.html`. Para usar imagens locais, troque o
-`src` da imagem correspondente por `assets/images/hero/...` e
-`assets/images/sobre/...`.
+**Atenção:** a imagem de fundo do Hero aponta para uma URL da Unsplash dentro
+do `index.html`. Para usar uma imagem local, troque o `src` da imagem
+correspondente por `assets/images/hero/...`.
 
 ## Como adicionar novo trabalho
 
-Em **`js/config.js`**, edite o array `PORTFOLIO`:
+Em **`js/config.js`**, edite o array `PORTFOLIO`. As fotos ficam em
+`assets/images/portfolio/`, uma pasta por categoria:
+
+- `corte-01/` → CORTES
+- `corte-02/` → BARBAS
+- `corte-03/` → COMBOS
+- `corte-04/` → ESTILOS
+
+A primeira foto da pasta é a capa do card; as demais aparecem no lightbox.
 
 ```javascript
 const PORTFOLIO = [
   {
     tag: "Corte",
-    titulo: "Corte Masculino",
+    titulo: "Cortes",
     descricao: "Descrição do trabalho.",
-    imagem: "assets/images/portfolio/corte-05/imagem-01.jpg",
+    imagem: "assets/images/portfolio/corte-01/corte-02.png",
     imagens: [
-      "assets/images/portfolio/corte-05/imagem-01.jpg",
-      "assets/images/portfolio/corte-05/imagem-02.jpg"
+      "assets/images/portfolio/corte-01/corte-02.png",
+      "assets/images/portfolio/corte-01/corte-03.png"
     ],
     categoria: "Corte"   // Corte | Barba | Combo | Estilo (para os filtros)
   }

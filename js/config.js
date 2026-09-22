@@ -75,51 +75,68 @@ const CONFIG = {
    ========================================================================== */
 
 const PORTFOLIO = [
-  // IMAGENS DEMONSTRATIVAS (Unsplash). Substitua pelas fotos reais em:
-  // assets/images/portfolio/corte-01/ ... corte-04/
+  // Pasta: corte-01  ->  categoria CORTES
   {
     tag: "Corte",
-    titulo: "Corte Masculino",
-    descricao: "Corte personalizado, moderno e com acabamento impecável.",
-    imagem: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1000&q=70",
+    titulo: "Cortes",
+    descricao: "Cortes personalizados, modernos e com acabamento impecável.",
+    imagem: "assets/images/portfolio/corte-01/corte-02.png",
     imagens: [
-      "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1000&q=70",
-      "https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=1000&q=70",
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1000&q=70"
+      "assets/images/portfolio/corte-01/corte-02.png",
+      "assets/images/portfolio/corte-01/corte-03.png",
+      "assets/images/portfolio/corte-01/corte-04.png",
+      "assets/images/portfolio/corte-01/corte-08.png",
+      "assets/images/portfolio/corte-01/corte-14.png",
+      "assets/images/portfolio/corte-01/corte-22.jpg",
+      "assets/images/portfolio/corte-01/corte-24.png"
     ],
     categoria: "Corte"
   },
+  // Pasta: corte-02  ->  categoria BARBAS
   {
     tag: "Barba",
-    titulo: "Barba Estilizada",
+    titulo: "Barbas",
     descricao: "Modelagem e acabamento de barba com atenção ao detalhe.",
-    imagem: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=1000&q=70",
+    imagem: "assets/images/portfolio/corte-02/corte-09.png",
     imagens: [
-      "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=1000&q=70",
-      "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1000&q=70"
+      "assets/images/portfolio/corte-02/corte-09.png",
+      "assets/images/portfolio/corte-02/corte-13.png",
+      "assets/images/portfolio/corte-02/corte-15.png",
+      "assets/images/portfolio/corte-02/corte-20.jpg"
     ],
     categoria: "Barba"
   },
+  // Pasta: corte-03  ->  categoria COMBOS
   {
     tag: "Combo",
-    titulo: "Combo Corte + Barba",
+    titulo: "Combos",
     descricao: "Visual completo: corte e barba no mesmo atendimento.",
-    imagem: "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1000&q=70",
+    imagem: "assets/images/portfolio/corte-03/corte-12.png",
     imagens: [
-      "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1000&q=70",
-      "https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=1000&q=70"
+      "assets/images/portfolio/corte-03/corte-12.png",
+      "assets/images/portfolio/corte-03/corte-17.png",
+      "assets/images/portfolio/corte-03/corte-18.png",
+      "assets/images/portfolio/corte-03/corte25.png"
     ],
     categoria: "Combo"
   },
+  // Pasta: corte-04  ->  categoria ESTILOS
   {
     tag: "Estilo",
-    titulo: "Corte Degradê",
+    titulo: "Estilos",
     descricao: "Degradê preciso e finalização impecável, no estilo que você procura.",
-    imagem: "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1000&q=70",
+    imagem: "assets/images/portfolio/corte-04/corte-01.png",
     imagens: [
-      "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1000&q=70",
-      "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=1000&q=70",
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1000&q=70"
+      "assets/images/portfolio/corte-04/corte-01.png",
+      "assets/images/portfolio/corte-04/corte-05.png",
+      "assets/images/portfolio/corte-04/corte-06.png",
+      "assets/images/portfolio/corte-04/corte-07.png",
+      "assets/images/portfolio/corte-04/corte-10.png",
+      "assets/images/portfolio/corte-04/corte-11.png",
+      "assets/images/portfolio/corte-04/corte-16.png",
+      "assets/images/portfolio/corte-04/corte-19.png",
+      "assets/images/portfolio/corte-04/corte-21.png",
+      "assets/images/portfolio/corte-04/corte-23.png"
     ],
     categoria: "Estilo"
   }
