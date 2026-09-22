@@ -187,6 +187,12 @@ header.glass {
   transform: translateY(-2px);
 }
 
+.logo-img {
+  height: 58px;
+  width: auto;
+  display: block;
+}
+
 .logo-box {
   width: 64px;
   height: 64px;
@@ -2037,7 +2043,7 @@ body.no-scroll {
     linear-gradient(rgba(8, 8, 10, 0.8), rgba(8, 8, 10, 0.88)),
     radial-gradient(ellipse at 20% 50%, rgba(var(--gold-rgb), 0.2), transparent 50%),
     radial-gradient(ellipse at 80% 50%, rgba(var(--gold-rgb), 0.14), transparent 50%),
-    url("../images/fachada.jpg") center / cover no-repeat,
+    url("../assets/images/fachada.jpg") center / cover no-repeat,
     var(--dark);
   color: var(--white);
   text-align: center;
@@ -2382,6 +2388,10 @@ body.no-scroll {
   .logo-box {
     width: 54px;
     height: 54px;
+  }
+
+  .logo-img {
+    height: 46px;
   }
 
   .logo-text {
