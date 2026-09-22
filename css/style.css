@@ -1362,36 +1362,8 @@ header.glass {
   box-shadow: 0 0 8px rgba(var(--gold-rgb), 0.5);
 }
 
-.btn-service {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background: linear-gradient(135deg, var(--gold-light), var(--gold) 55%, var(--gold-dark));
-  color: #141414;
-  font-weight: 800;
-  font-size: 0.88rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  padding: 13px 22px;
-  border-radius: var(--radius-sm);
-  transition: transform 0.25s, box-shadow 0.25s, filter 0.25s;
-  align-self: flex-start;
-}
-
-.btn-service:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(var(--gold-rgb), 0.45);
-  filter: brightness(1.06);
-}
-
-.btn-service i {
-  width: 17px;
-  height: 17px;
-}
-
 /* --------------------------------------------------------------------------
-   11. PORTFÓLIO / GALERIA (COVERFLOW)
+    11. PORTFÓLIO / GALERIA (COVERFLOW)
    -------------------------------------------------------------------------- */
 .portfolio-section {
   background: radial-gradient(ellipse at 50% 0%, rgba(var(--gold-rgb), 0.07), transparent 55%);
@@ -2059,16 +2031,16 @@ body.no-scroll {
 }
 
 /* --------------------------------------------------------------------------
-   13. FORMULÁRIO DE AGENDAMENTO
+    13b. CONTATO — ATENDIMENTO POR ORDEM DE CHEGADA
    -------------------------------------------------------------------------- */
-.form-section {
+.order-section {
   background: var(--graphite);
   padding: 100px 0;
   position: relative;
   overflow: hidden;
 }
 
-.form-section::before {
+.order-section::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -2076,7 +2048,7 @@ body.no-scroll {
   pointer-events: none;
 }
 
-.form-grid {
+.order-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 50px;
@@ -2085,7 +2057,7 @@ body.no-scroll {
   z-index: 1;
 }
 
-.form-info h2 {
+.order-info h2 {
   font-family: var(--font-display);
   font-size: 2.6rem;
   font-weight: 400;
@@ -2096,149 +2068,46 @@ body.no-scroll {
   line-height: 1.1;
 }
 
-.form-info > p {
+.order-info h2 em {
+  font-style: normal;
+  color: var(--gold);
+}
+
+.order-info > p {
   color: var(--text-muted);
   font-size: 1rem;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   line-height: 1.7;
 }
 
-.form-info-features {
+.order-list {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-}
-
-.form-feature {
-  display: flex;
-  align-items: center;
   gap: 14px;
+  margin-bottom: 34px;
 }
 
-.form-feature-icon {
-  width: 44px;
-  height: 44px;
-  background: rgba(var(--gold-rgb), 0.09);
-  border: 1px solid rgba(var(--gold-rgb), 0.22);
-  color: var(--gold-light);
-  border-radius: 10px;
+.order-list li {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 12px;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.order-list li i {
+  width: 20px;
+  height: 20px;
+  color: var(--gold-light);
   flex-shrink: 0;
 }
 
-.form-feature-icon i {
-  width: 20px;
-  height: 20px;
-}
-
-.form-feature span {
-  font-weight: 600;
-  color: var(--white);
-  font-size: 0.95rem;
-}
-
-.form-card {
-  background: linear-gradient(180deg, var(--panel), var(--graphite-2));
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 36px;
-  box-shadow: var(--shadow);
-}
-
-.form-card h3 {
-  font-family: var(--font-display);
-  font-size: 1.7rem;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--white);
-  margin-bottom: 24px;
-}
-
-.form-group {
-  margin-bottom: 18px;
-}
-
-.form-group label {
-  display: block;
-  font-weight: 600;
-  font-size: 0.86rem;
-  color: var(--white);
-  margin-bottom: 6px;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  padding: 13px 16px;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-sm);
-  font-family: inherit;
-  font-size: 0.95rem;
-  color: var(--white);
-  background: var(--dark);
-  transition: border-color 0.25s, box-shadow 0.25s;
-  outline: none;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: #6b6b70;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  border-color: var(--gold);
-  box-shadow: 0 0 0 3px rgba(var(--gold-rgb), 0.14);
-}
-
-.form-group select option {
-  background: var(--panel-2);
-  color: var(--white);
-}
-
-.form-group select:invalid {
-  color: #6b6b70;
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-.btn-form-submit {
-  width: 100%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background: linear-gradient(135deg, var(--gold-light), var(--gold) 55%, var(--gold-dark));
-  color: #141414;
-  font-weight: 800;
-  font-size: 0.95rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  padding: 15px 28px;
-  border-radius: var(--radius-sm);
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 6px 22px rgba(var(--gold-rgb), 0.4);
-  transition: transform 0.25s, box-shadow 0.25s, filter 0.25s;
-}
-
-.btn-form-submit:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(var(--gold-rgb), 0.55);
-  filter: brightness(1.06);
-}
-
-.btn-form-submit i {
-  width: 20px;
-  height: 20px;
+.order-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 /* --------------------------------------------------------------------------
@@ -2291,36 +2160,8 @@ body.no-scroll {
   position: relative;
 }
 
-.btn-cta-whatsapp {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: linear-gradient(135deg, var(--gold-light), var(--gold) 55%, var(--gold-dark));
-  color: #141414;
-  font-weight: 800;
-  font-size: 1rem;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  padding: 16px 36px;
-  border-radius: 50px;
-  box-shadow: 0 8px 30px rgba(var(--gold-rgb), 0.45);
-  transition: transform 0.25s, box-shadow 0.25s, filter 0.25s;
-  position: relative;
-}
-
-.btn-cta-whatsapp:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 42px rgba(var(--gold-rgb), 0.6);
-  filter: brightness(1.06);
-}
-
-.btn-cta-whatsapp i {
-  width: 22px;
-  height: 22px;
-}
-
 /* --------------------------------------------------------------------------
-   15. RODAPÉ
+    15. RODAPÉ
    -------------------------------------------------------------------------- */
 .site-footer {
   background: #08080a;
@@ -2461,42 +2302,48 @@ body.no-scroll {
 }
 
 /* --------------------------------------------------------------------------
-   16. BOTÃO FLUTUANTE WHATSAPP
+    16. BOTÃO FLUTUANTE DE AVALIAÇÃO NO GOOGLE
    -------------------------------------------------------------------------- */
-.whatsapp-float {
+.google-float {
   position: fixed;
   bottom: 28px;
   right: 28px;
-  background: linear-gradient(135deg, var(--whatsapp), #128c7e);
-  color: var(--white);
   width: 62px;
   height: 62px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+  background: rgba(62, 62, 68, 0.55);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  backdrop-filter: blur(12px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: var(--gold-light);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
   z-index: 999;
-  transition: transform 0.3s, box-shadow 0.3s;
-  animation: whatsappPulse 2.6s infinite;
+  transition: transform 0.3s, background 0.3s, border-color 0.3s;
+  animation: googlePulse 2.6s infinite;
 }
 
-.whatsapp-float:hover {
+.google-float:hover {
   transform: scale(1.12);
-  box-shadow: 0 12px 34px rgba(37, 211, 102, 0.6);
+  background: rgba(78, 78, 85, 0.7);
+  border-color: rgba(var(--gold-rgb), 0.45);
 }
 
-.whatsapp-float i {
+.google-float i {
   width: 30px;
   height: 30px;
 }
 
-.whatsapp-float-tip {
+.google-float-tip {
   position: absolute;
   right: 74px;
   top: 50%;
   transform: translateY(-50%);
-  background: var(--graphite-2);
+  background: rgba(34, 34, 38, 0.82);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   color: var(--white);
   font-size: 0.78rem;
   font-weight: 600;
@@ -2511,16 +2358,16 @@ body.no-scroll {
   pointer-events: none;
 }
 
-.whatsapp-float:hover .whatsapp-float-tip {
+.google-float:hover .google-float-tip {
   opacity: 1;
   visibility: visible;
   transform: translateY(-50%) translateX(-4px);
 }
 
-@keyframes whatsappPulse {
-  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
-  70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+@keyframes googlePulse {
+  0% { box-shadow: 0 0 0 0 rgba(var(--gold-rgb), 0.45); }
+  70% { box-shadow: 0 0 0 16px rgba(var(--gold-rgb), 0); }
+  100% { box-shadow: 0 0 0 0 rgba(var(--gold-rgb), 0); }
 }
 
 /* --------------------------------------------------------------------------
@@ -2585,7 +2432,7 @@ body.no-scroll {
     gap: 40px;
   }
 
-  .form-grid,
+  .order-grid,
   .coverage-grid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -2755,7 +2602,7 @@ body.no-scroll {
   .services-section,
   .portfolio-section,
   .coverage-section,
-  .form-section,
+  .order-section,
   .about-section,
   .experience-section,
   .steps-section {
@@ -2791,6 +2638,7 @@ body.no-scroll {
     grid-template-columns: 1fr;
   }
 
+  .order-grid,
   .coverage-grid {
     grid-template-columns: 1fr;
   }
@@ -2901,25 +2749,20 @@ body.no-scroll {
     font-size: 2.2rem;
   }
 
-  .btn-cta-whatsapp {
-    width: 100%;
-    justify-content: center;
-  }
-
-  /* WhatsApp float */
-  .whatsapp-float {
+  /* Google float */
+  .google-float {
     bottom: 18px;
     right: 18px;
     width: 56px;
     height: 56px;
   }
 
-  .whatsapp-float i {
+  .google-float i {
     width: 28px;
     height: 28px;
   }
 
-  .whatsapp-float-tip {
+  .google-float-tip {
     display: none;
   }
 }

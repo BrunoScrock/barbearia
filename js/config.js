@@ -20,6 +20,12 @@ const CONFIG = {
   telefone: "[INSERIR TELEFONE]",       // Ex.: (41) 99999-9999
   email: "[INSERIR E-MAIL]",           // Ex.: contato@quirinobarbearia.com.br
 
+  /* Avaliação no Google -------------------------------------------------- */
+  // Link do botão "Nos avalie" (perfil da barbearia no Google Maps).
+  // No Google Maps: Perfil do negócio → Compartilhar → Copiar link e incluir /reviews,
+  // ou use o link direto do formulário de avaliação (ex.: https://g.page/r/XXXX/review)
+  avaliacaoUrl: "[INSERIR LINK DE AVALIAÇÃO DO GOOGLE]",
+
   /* Localização ---------------------------------------------------------- */
   cidade: "Curitiba",                 // Ex.: Curitiba
   endereco: "Rua José Valle, 1334 - Santa Felicidade", // Ex.: Rua Exemplo, 123 - Bairro
@@ -34,26 +40,28 @@ const CONFIG = {
   facebook: "",
 
   /* Mensagens do WhatsApp ------------------------------------------------ */
+  // A barbearia não trabalha com agendamento: o atendimento é por ordem de
+  // chegada. As mensagens abaixo são usadas para tirar dúvidas, não marcar.
   mensagemPadrao:
-    "Olá! Gostaria de agendar um horário na Quirino Barbearia.",
+    "Olá! Gostaria de mais informações sobre o atendimento da Quirino Barbearia.",
 
   mensagemCorte:
-    "Olá! Gostaria de agendar um corte na Quirino Barbearia.",
+    "Olá! Gostaria de mais informações sobre os cortes da Quirino Barbearia.",
 
   mensagemBarba:
-    "Olá! Gostaria de agendar um serviço de barba na Quirino Barbearia.",
+    "Olá! Gostaria de mais informações sobre o serviço de barba da Quirino Barbearia.",
 
   mensagemCombo:
-    "Olá! Gostaria de agendar um combo de corte e barba na Quirino Barbearia.",
+    "Olá! Gostaria de mais informações sobre o combo corte + barba da Quirino Barbearia.",
 
   mensagemAcabamento:
-    "Olá! Gostaria de agendar um serviço de acabamento na Quirino Barbearia.",
+    "Olá! Gostaria de mais informações sobre o serviço de acabamento da Quirino Barbearia.",
 
   mensagemSobrancelha:
-    "Olá! Gostaria de agendar um serviço de sobrancelha na Quirino Barbearia.",
+    "Olá! Gostaria de mais informações sobre o serviço de sobrancelha da Quirino Barbearia.",
 
   mensagemLavagem:
-    "Olá! Gostaria de agendar um serviço de lavagem/finalização na Quirino Barbearia."
+    "Olá! Gostaria de mais informações sobre o serviço de lavagem/finalização da Quirino Barbearia."
 };
 
 /* ==========================================================================

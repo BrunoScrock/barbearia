@@ -33,7 +33,7 @@ function abrirWhatsApp(mensagem) {
   if (url) window.open(url, "_blank", "noopener");
 }
 
-function enviarAgendamento(categoria) {
+function falarPeloWhatsApp(categoria) {
   let mensagem = CONFIG.mensagemPadrao;
 
   if (categoria) {
@@ -47,35 +47,28 @@ function enviarAgendamento(categoria) {
 }
 
 /* --------------------------------------------------------------------------
-   FORMULÁRIO DE AGENDAMENTO
+   AVALIAÇÃO NO GOOGLE
    -------------------------------------------------------------------------- */
 
-function enviarFormulario(event) {
-  event.preventDefault();
+function avaliacaoDoGoogle() {
+  return String(CONFIG.avaliacaoUrl || "").trim();
+}
 
-  const form = event.target;
-  const nome = form.querySelector('[name="nome"]').value.trim();
-  const servico = form.querySelector('[name="servico"]').value;
-  const data = form.querySelector('[name="data"]').value.trim();
-  const horario = form.querySelector('[name="horario"]').value.trim();
-  const telefone = form.querySelector('[name="telefone"]').value.trim();
-  const mensagemExtra = form.querySelector('[name="mensagem"]').value.trim();
+function semAvaliacaoConfigurada() {
+  alert(
+    "Link de avaliação do Google ainda não configurado.\n\n" +
+    "Abra o arquivo js/config.js e preencha CONFIG.avaliacaoUrl " +
+    "com o link de avaliação do Google da barbearia."
+  );
+}
 
-  if (!nome || !servico || !telefone) {
-    alert("Por favor, preencha os campos obrigatórios (Nome, Serviço e Telefone).");
+function avaliarQuirino() {
+  const url = avaliacaoDoGoogle();
+  if (!url || url.startsWith("[INSERIR")) {
+    semAvaliacaoConfigurada();
     return;
   }
-
-  let mensagem = CONFIG.mensagemPadrao + "\n\n";
-  mensagem += "*Nome:* " + nome + "\n";
-  mensagem += "*Serviço:* " + servico + "\n";
-  if (data) mensagem += "*Data desejada:* " + data + "\n";
-  if (horario) mensagem += "*Horário desejado:* " + horario + "\n";
-  mensagem += "*Telefone:* " + telefone + "\n";
-  if (mensagemExtra) mensagem += "*Mensagem:* " + mensagemExtra + "\n";
-  mensagem += "\nAguardo confirmação. Obrigado!";
-
-  abrirWhatsApp(mensagem);
+  window.open(url, "_blank", "noopener");
 }
 
 /* --------------------------------------------------------------------------
@@ -109,6 +102,9 @@ function aplicarConfiguracao() {
   const badgeHorario2 = document.getElementById("badge-horario-2");
   if (badgeHorario2) badgeHorario2.textContent = CONFIG.horario || "[INSERIR HORÁRIO]";
 
+  const orderHorario = document.getElementById("order-horario");
+  if (orderHorario) orderHorario.textContent = CONFIG.horario || "[INSERIR HORÁRIO]";
+
   // Área de atendimento
   const coverageText = document.getElementById("coverage-text");
   if (coverageText) {
@@ -137,9 +133,14 @@ function aplicarConfiguracao() {
   if (numero.length >= 10) {
     const footerWhatsapp = document.getElementById("footer-whatsapp-link");
     if (footerWhatsapp) footerWhatsapp.setAttribute("href", gerarUrlWhatsApp(CONFIG.mensagemPadrao));
+  }
 
-    const whatsAppFloat = document.getElementById("whatsapp-float");
-    if (whatsAppFloat) whatsAppFloat.setAttribute("href", gerarUrlWhatsApp(CONFIG.mensagemPadrao));
+  // Avaliação no Google (botões "Nos avalie")
+  const avaliacaoUrl = avaliacaoDoGoogle();
+  if (avaliacaoUrl && !avaliacaoUrl.startsWith("[INSERIR")) {
+    document.querySelectorAll(".js-avaliar").forEach(function (el) {
+      el.setAttribute("href", avaliacaoUrl);
+    });
   }
 
   // Endereço
@@ -153,6 +154,11 @@ function aplicarConfiguracao() {
 
   if (enderecoFooter2 && temEndereco) {
     enderecoFooter2.textContent = CONFIG.endereco;
+  }
+
+  const orderEndereco = document.getElementById("order-endereco");
+  if (orderEndereco && temEndereco) {
+    orderEndereco.textContent = CONFIG.endereco + (CONFIG.cidade && !String(CONFIG.cidade).startsWith("[INSERIR") ? " · " + CONFIG.cidade : "");
   }
 
   // Redes sociais
@@ -246,7 +252,6 @@ function montarCoverflow() {
       '<figcaption>' +
         '<span class="coverflow-tag lightbox-tag"></span>' +
         '<h3 class="lightbox-title"></h3>' +
-        '<button class="coverflow-cta lightbox-cta">Agendar</button>' +
       '</figcaption>' +
     '</figure>' +
     '<div class="lightbox-thumbs"></div>';
@@ -293,7 +298,6 @@ function montarCoverflow() {
     overlay.classList.toggle("has-single", !hasMulti);
     overlay.querySelector(".lightbox-tag").textContent = item.tag;
     overlay.querySelector(".lightbox-title").textContent = item.titulo;
-    overlay.querySelector(".lightbox-cta").onclick = function () { enviarAgendamento(item.categoria); };
 
     const thumbs = overlay.querySelector(".lightbox-thumbs");
     thumbs.innerHTML = "";
@@ -457,7 +461,6 @@ function montarCoverflow() {
           '<h3 class="coverflow-title">' + item.titulo + "</h3>" +
           (item.descricao ? '<p class="coverflow-desc">' + item.descricao + "</p>" : "") +
           (item.imagens && item.imagens.length > 1 ? '<span class="coverflow-hint">Ver todas as fotos</span>' : "") +
-          '<button class="coverflow-cta" data-categoria="' + (item.categoria || "") + '">Agendar</button>' +
         "</div>";
       card.appendChild(content);
 
@@ -472,11 +475,6 @@ function montarCoverflow() {
           setTimeout(function () { hoverLock = false; }, 850);
           irPara(i);
         }
-      });
-
-      content.querySelector(".coverflow-cta").addEventListener("click", function (e) {
-        e.stopPropagation();
-        enviarAgendamento(e.currentTarget.dataset.categoria);
       });
 
       stage.appendChild(card);
@@ -631,8 +629,7 @@ function iniciarReveal() {
     ".services-grid > *",
     ".about-grid > *",
     ".coverage-grid > *",
-    ".form-grid > *",
-    ".form-info-features > *",
+    ".order-grid > *",
     ".steps-grid > *",
     ".process-item",
     ".section-title",

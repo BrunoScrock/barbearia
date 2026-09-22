@@ -1,7 +1,8 @@
 # Quirino Barbearia
 
 Site institucional profissional e responsivo da **Quirino Barbearia** — barbearia
-moderna, premium e voltada para conversão de agendamentos.
+moderna e premium em Santa Felicidade, Curitiba. Atendimento por ordem de chegada
+(sem agendamento) e geração de avaliações no Google.
 
 Desenvolvido com **HTML5, CSS3 e JavaScript ES6+** (projeto 100% estático,
 pronto para hospedagem gratuita em GitHub Pages, Netlify, Vercel e
@@ -69,6 +70,7 @@ const CONFIG = {
   endereco: "",
   atendimento: "",
   horario: "",
+  avaliacaoUrl: "",  // link de avaliação no Google ("Nos avalie")
   instagram: "",
   facebook: "",
   // mensagens do WhatsApp...
@@ -125,8 +127,17 @@ CONFIG.whatsapp = "5541999999999";
 
 Formato: **55 + DDD + número**, somente dígitos.
 
-Todos os botões de agendamento (menu, cards, formulário, botão flutuante e
-rodapé) usam esse mesmo número.
+## Como alterar o link de avaliação no Google
+
+Os botões "Nos avalie" (cabeçalho, hero, seção de contato e botão flutuante)
+apontam para o link em **`js/config.js`**:
+
+```javascript
+CONFIG.avaliacaoUrl = "https://g.page/r/XXXX/review";
+```
+
+Para obtê-lo: no Google Maps, abra o perfil do negócio → **Compartilhar** →
+copie o link (ou use o link do formulário de "Avaliar").
 
 ---
 
@@ -139,8 +150,9 @@ rodapé) usam esse mesmo número.
 - Galeria **Coverflow 3D** com autoplay, setas, dots, swipe e teclado
 - **Lightbox** com contador, miniaturas e navegação
 - Filtros de galeria (Todos, Cortes, Barbas, Combos, Estilos)
-- Formulário de agendamento que envia a solicitação para o WhatsApp
-- Botão flutuante do WhatsApp
+- Seção de contato com explicitação do atendimento por ordem de chegada (sem agendamento)
+- Botões "Nos avalie" (cabeçalho, hero, contato e botão flutuante) para avaliação no Google
+- Botão flutuante em vidro fosco (fundo cinza) com ícone de estrela
 - Botão "Como chegar" com mapa OpenStreetMap
 - SEO: Schema.org, Open Graph, Twitter Cards, sitemap, robots e llms.txt
 - Acessibilidade: ARIA, navegação por teclado, ESC para fechar e

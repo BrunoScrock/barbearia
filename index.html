@@ -6,7 +6,7 @@
   <title>Quirino Barbearia | Cortes Masculinos e Barba</title>
 
   <!-- SEO -->
-  <meta name="description" content="Barbearia Quirino em Santa Felicidade, Curitiba. Especializada em cortes masculinos, degradê, fade, social, barba com navalha e cuidados capilares. Agende seu horário pelo WhatsApp.">
+  <meta name="description" content="Barbearia Quirino em Santa Felicidade, Curitiba. Especializada em cortes masculinos, degradê, fade, social, barba com navalha e cuidados capilares. Atendimento por ordem de chegada, sem agendamento prévio.">
   <meta name="keywords" content="barbearia, corte masculino, barba, cortes de cabelo, degradê, fade, social, barba com navalha, cuidados capilares, Santa Felicidade, Curitiba">
   <meta name="theme-color" content="#0b0b0d">
   <meta name="robots" content="index, follow">
@@ -102,14 +102,14 @@
           <li><a href="#galeria">Galeria</a></li>
           <li><a href="#diferenciais">Diferenciais</a></li>
           <li><a href="#atendimento">Atendimento</a></li>
-          <li><a href="#agendamento">Contato</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
-        <a href="#" class="btn-header" onclick="enviarAgendamento(); return false;" aria-label="Agendar horário via WhatsApp">
-          <i data-lucide="calendar" aria-hidden="true"></i>
-          <span>Agendar Horário</span>
+        <a href="#" class="btn-header js-avaliar" onclick="avaliarQuirino(); return false;" aria-label="Avaliar a Quirino Barbearia no Google">
+          <i data-lucide="star" aria-hidden="true"></i>
+          <span>Nos avalie</span>
         </a>
         <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
           <span class="bar" aria-hidden="true"></span>
@@ -160,8 +160,8 @@
             <p class="hero-subtitle" id="hero-subtitulo">Cortes masculinos, barba e cuidados para quem valoriza seu estilo.</p>
 
             <div class="hero-ctas">
-              <a href="#" class="btn-cta btn-cta-primary" onclick="enviarAgendamento(); return false;">
-                <i data-lucide="calendar-check" aria-hidden="true"></i> Agendar Horário
+              <a href="#" class="btn-cta btn-cta-primary js-avaliar" onclick="avaliarQuirino(); return false;">
+                <i data-lucide="star" aria-hidden="true"></i> Nos avalie
               </a>
               <a href="#servicos" class="btn-cta btn-cta-secondary">
                 <i data-lucide="arrow-down" aria-hidden="true"></i> Conhecer Serviços
@@ -336,7 +336,7 @@
         <div class="section-title reveal">
           <span class="section-eyebrow">Atendimento</span>
           <h2>Como funciona?</h2>
-          <p>Um processo simples e descomplicado, do agendamento ao resultado final</p>
+          <p>Um processo simples e descomplicado, do momento em que você chega ao resultado final</p>
         </div>
 
         <div class="steps-grid">
@@ -350,16 +350,16 @@
 
           <article class="step-item">
             <span class="step-number">02</span>
-            <div class="step-icon"><i data-lucide="calendar-check" aria-hidden="true"></i></div>
-            <h3>Agende seu horário</h3>
-            <p>Envie uma mensagem pelo WhatsApp e confirme o melhor horário.</p>
+            <div class="step-icon"><i data-lucide="door-open" aria-hidden="true"></i></div>
+            <h3>Sem agendamento</h3>
+            <p>Não é preciso marcar horário: o atendimento é por ordem de chegada.</p>
           </article>
 
           <article class="step-item">
             <span class="step-number">03</span>
             <div class="step-icon"><i data-lucide="store" aria-hidden="true"></i></div>
             <h3>Venha para a barbearia</h3>
-            <p>Chegue no horário combinado e seja recebido com seu atendimento.</p>
+            <p>Dentro do horário de funcionamento, chegue e seja recebido com todo o cuidado.</p>
           </article>
 
           <article class="step-item">
@@ -397,9 +397,6 @@
               <li>Acabamento na nuca e nas laterais</li>
               <li>Finalização com produtos de qualidade</li>
             </ul>
-            <a href="#" class="btn-service" onclick="enviarAgendamento('Corte'); return false;">
-              Agendar <i data-lucide="arrow-right" aria-hidden="true"></i>
-            </a>
           </article>
 
           <!-- Barba -->
@@ -413,9 +410,6 @@
               <li>Alinhamento do contorno</li>
               <li>Hidratação e cuidados</li>
             </ul>
-            <a href="#" class="btn-service" onclick="enviarAgendamento('Barba'); return false;">
-              Agendar <i data-lucide="arrow-right" aria-hidden="true"></i>
-            </a>
           </article>
 
           <!-- Combo Corte + Barba -->
@@ -429,9 +423,6 @@
               <li>Visual completo e alinhado</li>
               <li>Otimização do seu tempo</li>
             </ul>
-            <a href="#" class="btn-service" onclick="enviarAgendamento('Combo'); return false;">
-              Agendar <i data-lucide="arrow-right" aria-hidden="true"></i>
-            </a>
           </article>
 
           <!-- Acabamento -->
@@ -445,9 +436,6 @@
               <li>Finalização com estilo</li>
               <li>Detalhes que fazem a diferença</li>
             </ul>
-            <a href="#" class="btn-service" onclick="enviarAgendamento('Acabamento'); return false;">
-              Agendar <i data-lucide="arrow-right" aria-hidden="true"></i>
-            </a>
           </article>
 
           <!-- Sobrancelha -->
@@ -461,9 +449,6 @@
               <li>Acabamento natural</li>
               <li>Harmonia com o rosto</li>
             </ul>
-            <a href="#" class="btn-service" onclick="enviarAgendamento('Sobrancelha'); return false;">
-              Agendar <i data-lucide="arrow-right" aria-hidden="true"></i>
-            </a>
           </article>
 
           <!-- Lavagem / Finalização -->
@@ -477,9 +462,6 @@
               <li>Estilização do visual</li>
               <li>Cuidado com fios e couro cabeludo</li>
             </ul>
-            <a href="#" class="btn-service" onclick="enviarAgendamento('Lavagem'); return false;">
-              Agendar <i data-lucide="arrow-right" aria-hidden="true"></i>
-            </a>
           </article>
 
         </div>
@@ -575,7 +557,7 @@
               <div class="coverage-info-icon"><i data-lucide="message-circle" aria-hidden="true"></i></div>
               <div class="coverage-info-text">
                 <h4>WhatsApp</h4>
-                <p><a href="#" id="coverage-whatsapp" onclick="enviarAgendamento(); return false;">Agendar pelo WhatsApp</a></p>
+                <p><a href="#" id="coverage-whatsapp" onclick="falarPeloWhatsApp(); return false;">Tirar dúvidas pelo WhatsApp</a></p>
               </div>
             </div>
           </div>
@@ -598,83 +580,68 @@
     </section>
 
     <!-- ============================================================
-         FORMULÁRIO DE AGENDAMENTO
+         CONTATO — ATENDIMENTO POR ORDEM DE CHEGADA
     ============================================================ -->
-    <section class="form-section" id="agendamento">
+    <section class="order-section" id="contato">
       <div class="container">
-        <div class="form-grid">
+        <div class="order-grid">
 
-          <div class="form-info">
-            <span class="about-tag">Agendamento</span>
-            <h2>Agende seu horário</h2>
-            <p>Preencha o formulário abaixo e envie sua solicitação diretamente pelo WhatsApp. Rápido, prático e sem burocracia.</p>
+          <div class="order-info">
+            <span class="about-tag">Atendimento</span>
+            <h2>Atendimento por <em>ordem de chegada</em></h2>
+            <p>Aqui na Quirino Barbearia não trabalhamos com agendamento de horários. Você não precisa marcar nada: é só chegar dentro do nosso horário de funcionamento e ser atendido por ordem de chegada, com a mesma qualidade e cuidado de sempre.</p>
 
-            <div class="form-info-features">
-              <div class="form-feature">
-                <div class="form-feature-icon"><i data-lucide="message-circle" aria-hidden="true"></i></div>
-                <span>Confirmação rápida pelo WhatsApp</span>
-              </div>
-              <div class="form-feature">
-                <div class="form-feature-icon"><i data-lucide="calendar-check" aria-hidden="true"></i></div>
-                <span>Escolha o melhor horário</span>
-              </div>
-              <div class="form-feature">
-                <div class="form-feature-icon"><i data-lucide="user-check" aria-hidden="true"></i></div>
-                <span>Atendimento personalizado</span>
-              </div>
-              <div class="form-feature">
-                <div class="form-feature-icon"><i data-lucide="map-pin" aria-hidden="true"></i></div>
-                <span>[INSERIR CIDADE]</span>
-              </div>
+            <ul class="order-list">
+              <li><i data-lucide="door-open" aria-hidden="true"></i> Venha sem agendar, quando quiser</li>
+              <li><i data-lucide="user-check" aria-hidden="true"></i> Atendimento por ordem de chegada</li>
+              <li><i data-lucide="sparkles" aria-hidden="true"></i> Corte, barba e cuidados capilares</li>
+              <li><i data-lucide="star" aria-hidden="true"></i> Gostou do atendimento? Avalie a Quirino no Google</li>
+            </ul>
+
+            <div class="order-actions">
+              <a href="#" class="btn-cta btn-cta-primary js-avaliar" onclick="avaliarQuirino(); return false;">
+                <i data-lucide="star" aria-hidden="true"></i> Nos avalie no Google
+              </a>
+              <a href="#" class="btn-cta btn-cta-secondary" onclick="falarPeloWhatsApp(); return false;">
+                <i data-lucide="message-circle" aria-hidden="true"></i> Tirar dúvidas pelo WhatsApp
+              </a>
             </div>
           </div>
 
-          <div class="form-card">
-            <h3>Solicitar Agendamento</h3>
-            <form id="formAgendamento" onsubmit="enviarFormulario(event)">
-              <div class="form-group">
-                <label for="formNome">Nome *</label>
-                <input type="text" id="formNome" name="nome" placeholder="Seu nome completo" autocomplete="name" required>
-              </div>
+          <div class="coverage-info">
 
-              <div class="form-group">
-                <label for="formServico">Serviço *</label>
-                <select id="formServico" name="servico" required>
-                  <option value="" selected disabled>Selecione o serviço</option>
-                  <option value="Corte Masculino">Corte Masculino</option>
-                  <option value="Barba">Barba</option>
-                  <option value="Corte + Barba">Corte + Barba</option>
-                  <option value="Acabamento">Acabamento</option>
-                  <option value="Sobrancelha">Sobrancelha</option>
-                  <option value="Lavagem / Finalização">Lavagem / Finalização</option>
-                  <option value="Outro">Outro</option>
-                </select>
+            <div class="coverage-info-item">
+              <div class="coverage-info-icon"><i data-lucide="map-pin" aria-hidden="true"></i></div>
+              <div class="coverage-info-text">
+                <h4>Localização</h4>
+                <p id="order-endereco">[INSERIR ENDEREÇO] · [INSERIR CIDADE]</p>
               </div>
+            </div>
 
-              <div class="form-group">
-                <label for="formData">Data desejada</label>
-                <input type="date" id="formData" name="data">
+            <div class="coverage-info-item">
+              <div class="coverage-info-icon"><i data-lucide="clock" aria-hidden="true"></i></div>
+              <div class="coverage-info-text">
+                <h4>Horário de Funcionamento</h4>
+                <p id="order-horario">[INSERIR HORÁRIO]</p>
               </div>
+            </div>
 
-              <div class="form-group">
-                <label for="formHorario">Horário desejado</label>
-                <input type="time" id="formHorario" name="horario">
+            <div class="coverage-info-item">
+              <div class="coverage-info-icon"><i data-lucide="message-circle" aria-hidden="true"></i></div>
+              <div class="coverage-info-text">
+                <h4>WhatsApp</h4>
+                <p><a href="#" onclick="falarPeloWhatsApp(); return false;">Tirar dúvidas pelo WhatsApp</a></p>
               </div>
+            </div>
 
-              <div class="form-group">
-                <label for="formTelefone">Telefone *</label>
-                <input type="tel" id="formTelefone" name="telefone" placeholder="(00) 00000-0000" autocomplete="tel" required>
+            <div class="coverage-info-item">
+              <div class="coverage-info-icon"><i data-lucide="star" aria-hidden="true"></i></div>
+              <div class="coverage-info-text">
+                <h4>Avaliação</h4>
+                <p><a href="#" class="js-avaliar" onclick="avaliarQuirino(); return false;">Avalie a Quirino no Google</a></p>
               </div>
+            </div>
 
-              <div class="form-group">
-                <label for="formMensagem">Mensagem</label>
-                <textarea id="formMensagem" name="mensagem" placeholder="Alguma preferência ou observação?" rows="3"></textarea>
-              </div>
-
-              <button type="submit" class="btn-form-submit">
-                <i data-lucide="send" aria-hidden="true"></i> Agendar pelo WhatsApp
-              </button>
-            </form>
           </div>
 
         </div>
@@ -687,10 +654,7 @@
     <section class="final-cta">
       <div class="container">
         <h2>Seu próximo corte <em>começa aqui.</em></h2>
-        <p>Agende seu horário na Quirino Barbearia e cuide do seu estilo.</p>
-        <a href="#" class="btn-cta-whatsapp" onclick="enviarAgendamento(); return false;">
-          <i data-lucide="message-circle" aria-hidden="true"></i> Agendar Horário
-        </a>
+        <p>Não trabalhamos com agendamento: o atendimento é por ordem de chegada. Venha cuidar do seu estilo.</p>
       </div>
     </section>
 
@@ -723,7 +687,7 @@
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#galeria">Galeria</a></li>
           <li><a href="#atendimento">Atendimento</a></li>
-          <li><a href="#agendamento">Contato</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
 
@@ -732,7 +696,7 @@
         <ul>
           <li>
             <i data-lucide="message-circle" aria-hidden="true"></i>
-            <a href="#" id="footer-whatsapp-link" onclick="enviarAgendamento(); return false;">Atendimento via WhatsApp</a>
+            <a href="#" id="footer-whatsapp-link" onclick="falarPeloWhatsApp(); return false;">Atendimento via WhatsApp</a>
           </li>
           <li>
             <i data-lucide="phone" aria-hidden="true"></i>
@@ -777,13 +741,11 @@
   </footer>
 
   <!-- ============================================================
-       BOTÃO FLUTUANTE WHATSAPP
+       BOTÃO FLUTUANTE DE AVALIAÇÃO NO GOOGLE
   ============================================================ -->
-  <a href="#" id="whatsapp-float" class="whatsapp-float" aria-label="Contato via WhatsApp — Quirino Barbearia" onclick="enviarAgendamento(); return false;">
-    <span class="whatsapp-float-tip">Agende seu horário</span>
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
-    </svg>
+  <a href="#" id="google-float" class="google-float js-avaliar" aria-label="Avaliar a Quirino Barbearia no Google" onclick="avaliarQuirino(); return false;">
+    <span class="google-float-tip">Nos avalie no Google</span>
+    <i data-lucide="star" aria-hidden="true"></i>
   </a>
 
   <!-- Scripts -->
