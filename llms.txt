@@ -14,7 +14,7 @@ serviço personalizado para cada cliente.
 ## Atendimento
 
 - Não trabalhamos com agendamento: o atendimento é por ordem de chegada
-- Avaliação no Google: [INSERIR LINK DE AVALIAÇÃO DO GOOGLE]
+- Avaliação no Google: https://search.google.com/local/writereview?placeid=ChIJA28EHt3h3JQRwd1M0D8Tixs
 
 ## Serviços
 

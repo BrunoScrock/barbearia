@@ -23,7 +23,7 @@ const CONFIG = {
   // Link do botão "Nos avalie" (perfil da barbearia no Google Maps).
   // No Google Maps: Perfil do negócio → Compartilhar → Copiar link e incluir /reviews,
   // ou use o link direto do formulário de avaliação (ex.: https://g.page/r/XXXX/review)
-  avaliacaoUrl: "[INSERIR LINK DE AVALIAÇÃO DO GOOGLE]",
+  avaliacaoUrl: "https://search.google.com/local/writereview?placeid=ChIJA28EHt3h3JQRwd1M0D8Tixs",
 
   /* Localização ---------------------------------------------------------- */
   cidade: "Curitiba",                 // Ex.: Curitiba
