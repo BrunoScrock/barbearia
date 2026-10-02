@@ -124,7 +124,7 @@ textarea:focus-visible {
 }
 
 /* --------------------------------------------------------------------------
-   3. CABEÇALHO
+   4. CABEÇALHO
    -------------------------------------------------------------------------- */
 header {
   position: fixed;
@@ -172,6 +172,83 @@ header.glass {
   flex-wrap: nowrap;
   height: 100%;
   min-width: 0;
+}
+
+/* --------------------------------------------------------------------------
+   3. TELA DE CARREGAMENTO
+   -------------------------------------------------------------------------- */
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 20px;
+  background: var(--dark);
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loader.is-oculto {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader__logo {
+  width: auto;
+  height: 64px;
+  animation: loader-pulsar 1.6s ease-in-out infinite;
+}
+
+.loader__caixa {
+  display: flex;
+  gap: 7px;
+}
+
+.loader__barra {
+  width: 9px;
+  height: 34px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+  box-shadow: 0 0 12px rgba(var(--gold-rgb), 0.35);
+  animation: loader-barra 1.05s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+.loader__barra:nth-child(2) { animation-delay: 0.13s; }
+.loader__barra:nth-child(3) { animation-delay: 0.26s; }
+
+.loader__texto {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+/* Três pontinhos animados depois do texto */
+.loader__pontos::after {
+  content: "...";
+  display: inline-block;
+  width: 1.4em;
+  text-align: left;
+  overflow: hidden;
+  vertical-align: bottom;
+  animation: loader-pontos 1.4s steps(4, end) infinite;
+}
+
+@keyframes loader-barra {
+  0%, 100% { transform: scaleY(0.42); opacity: 0.5; }
+  50% { transform: scaleY(1); opacity: 1; }
+}
+
+@keyframes loader-pontos {
+  0% { width: 0; }
+  100% { width: 1.4em; }
+}
+
+@keyframes loader-pulsar {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.03); opacity: 1; }
 }
 
 /* Logo */
@@ -2808,6 +2885,12 @@ body.no-scroll {
   }
 
   .hero-bg img {
+    animation: none;
+  }
+
+  .loader__logo,
+  .loader__barra,
+  .loader__pontos::after {
     animation: none;
   }
 

@@ -688,6 +688,33 @@ function criarParticulasHero() {
 }
 
 /* --------------------------------------------------------------------------
+   TELA DE CARREGAMENTO
+   -------------------------------------------------------------------------- */
+
+function iniciarLoader() {
+  const loader = document.getElementById("loader");
+  if (!loader) return;
+
+  const esconder = function () {
+    loader.classList.add("is-oculto");
+    window.setTimeout(function () {
+      if (loader.parentNode) loader.parentNode.removeChild(loader);
+    }, 600);
+  };
+
+  if (document.readyState === "complete") {
+    window.setTimeout(esconder, 420);
+  } else {
+    window.addEventListener("load", function () {
+      window.setTimeout(esconder, 420);
+    });
+  }
+
+  // Rede de segurança: 4 segundos e o loader sai de qualquer forma
+  window.setTimeout(esconder, 4000);
+}
+
+/* --------------------------------------------------------------------------
    NAVEGAÇÃO ATIVA (SCROLL SPY)
    -------------------------------------------------------------------------- */
 
@@ -724,6 +751,7 @@ function iniciarScrollSpy() {
    -------------------------------------------------------------------------- */
 
 document.addEventListener("DOMContentLoaded", function () {
+  iniciarLoader();
   aplicarConfiguracao();
   animarTituloHero();
 
