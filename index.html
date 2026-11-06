@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quirino Barbearia | Cortes Masculinos e Barba</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Barbearia Quirino em Santa Felicidade, Curitiba. Especializada em cortes masculinos, degradê, fade, social, barba com navalha e cuidados capilares. Atendimento por ordem de chegada, sem agendamento prévio.">
+  <meta name="keywords" content="barbearia, corte masculino, barba, cortes de cabelo, degradê, fade, social, barba com navalha, cuidados capilares, Santa Felicidade, Curitiba">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Quirino Barbearia">
+  <link rel="canonical" href="">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo/favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Quirino Barbearia | Cortes Masculinos e Barba">
+  <meta property="og:description" content="A Barbearia Quirino, localizada em Santa Felicidade, Curitiba, oferece serviços especializados em cuidados masculinos, com destaque para cortes tradicionais e modernos, degradê, fade e corte social, além de barba com navalha e cuidados capilares. O estabelecimento busca proporcionar atendimento de qualidade, aliando técnica, atenção aos detalhes e um serviço personalizado para cada cliente.">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Quirino Barbearia — Cortes Masculinos e Barba">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Quirino Barbearia | Cortes Masculinos e Barba">
+  <meta name="twitter:description" content="Barbearia Quirino em Santa Felicidade, Curitiba. Cortes masculinos, degradê, fade, social, barba com navalha e cuidados capilares.">
+  <meta name="twitter:image" content="">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Ícones Lucide -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org (dados estruturados) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Barbershop",
+    "name": "Quirino Barbearia",
+    "description": "A Barbearia Quirino, localizada em Santa Felicidade, Curitiba, oferece serviços especializados em cuidados masculinos, com destaque para cortes tradicionais e modernos, degradê, fade e corte social, além de barba com navalha e cuidados capilares. O estabelecimento busca proporcionar atendimento de qualidade, aliando técnica, atenção aos detalhes e um serviço personalizado para cada cliente.",
+    "url": "",
+    "telephone": "[INSERIR TELEFONE]",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua José Valle, 1334 - Santa Felicidade",
+      "addressLocality": "Curitiba",
+      "addressRegion": "PR",
+      "postalCode": "82020-250",
+      "addressCountry": "BR"
+    },
+    "areaServed": "Santa Felicidade, Curitiba",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "17:30"
+      }
+    ],
+    "priceRange": ""
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============================================================
+       TELA DE CARREGAMENTO
+  ============================================================ -->
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <img class="loader__logo" src="assets/images/logo/logoQuirino-transparent.png" alt="" width="533" height="419" aria-hidden="true">
+    <div class="loader__caixa" aria-hidden="true">
+      <span class="loader__barra"></span>
+      <span class="loader__barra"></span>
+      <span class="loader__barra"></span>
+    </div>
+    <p class="loader__texto">Bem-vindo à Quirino<span class="loader__pontos"></span></p>
+  </div>
+
+  <!-- ============================================================
+       CABEÇALHO FIXO
+  ============================================================ -->
+  <header id="topo">
+    <div class="container header-content">
+      <a href="#inicio" class="logo" aria-label="Página inicial — Quirino Barbearia">
+        <img class="logo-img" src="assets/images/logo/logoQuirino-transparent.png" alt="Logo Quirino Barbearia" width="533" height="419">
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#atendimento">Atendimento</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#" class="btn-header js-avaliar" onclick="avaliarQuirino(); return false;" aria-label="Avaliar a Quirino Barbearia no Google">
+          <i data-lucide="star" aria-hidden="true"></i>
+          <span>Nos avalie</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO — SEÇÃO PRINCIPAL
+    ============================================================ -->
+    <section class="hero" id="inicio">
+      <!-- Imagem de fundo (IMAGEM DEMONSTRATIVA — substitua por foto real em assets/images/hero/) -->
+      <div class="hero-bg">
+        <img src="assets/images/hero/background-inicio.jpg" alt="Ambiente da Quirino Barbearia — salão com cadeiras de barbeiro e iluminação de néon" fetchpriority="high">
+      </div>
+
+      <!-- Overlay escuro + gradiente + vinheta -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <!-- Partículas / iluminação -->
+      <div class="hero-particles" aria-hidden="true"></div>
+
+      <!-- Brilhos gradiente -->
+      <div class="hero-glow glow-1" aria-hidden="true"></div>
+      <div class="hero-glow glow-2" aria-hidden="true"></div>
+
+      <!-- Conteúdo -->
+      <div class="hero-content">
+        <div class="container hero-grid">
+
+          <div class="hero-text">
+            <div class="hero-badges">
+              <span class="badge"><i data-lucide="scissors" aria-hidden="true"></i> <span id="badge-horario">[INSERIR HORÁRIO]</span></span>
+              <span class="badge"><i data-lucide="award" aria-hidden="true"></i> Estilo e precisão</span>
+              <span class="badge"><i data-lucide="shield-check" aria-hidden="true"></i> Atendimento personalizado</span>
+            </div>
+
+            <h1 class="hero-title" aria-label="Quirino Barbearia">
+              <span class="line line-1"><span class="line-inner">Quirino</span></span>
+              <span class="line line-2"><span class="line-inner">Barbearia</span></span>
+            </h1>
+
+            <p class="hero-subtitle" id="hero-subtitulo">Cortes masculinos, barba e cuidados para quem valoriza seu estilo.</p>
+
+            <div class="hero-ctas">
+              <a href="#" class="btn-cta btn-cta-primary js-avaliar" onclick="avaliarQuirino(); return false;">
+                <i data-lucide="star" aria-hidden="true"></i> Nos avalie
+              </a>
+              <a href="#servicos" class="btn-cta btn-cta-secondary">
+                <i data-lucide="arrow-down" aria-hidden="true"></i> Conhecer Serviços
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-photo">
+            <div class="hero-photo-wrapper">
+              <!-- [INSERIR FOTO] Foto lateral do hero -->
+              <img src="assets/images/experiencia/destaque-estilo-precisao.jpg" alt="Barbeiro realizando corte de cabelo na Quirino Barbearia">
+            </div>
+            <div class="hero-photo-badge">
+              <i data-lucide="crown" aria-hidden="true"></i>
+              <span>Estilo, precisão e personalidade</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DIFERENCIAIS
+    ============================================================ -->
+    <section class="differentials" id="diferenciais">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="section-eyebrow">Diferenciais</span>
+          <h2>Por que escolher a <em>Quirino Barbearia</em>?</h2>
+          <p>Cuidado, técnica e uma experiência pensada para o seu estilo</p>
+        </div>
+
+        <div class="diff-grid">
+
+          <article class="diff-card">
+            <div class="diff-icon"><i data-lucide="user-check" aria-hidden="true"></i></div>
+            <h3>Atendimento Personalizado</h3>
+            <p>Cada cliente é recebido com atenção às suas preferências, do corte ao acabamento final.</p>
+          </article>
+
+          <article class="diff-card">
+            <div class="diff-icon"><i data-lucide="badge-check" aria-hidden="true"></i></div>
+            <h3>Profissionalismo e Técnica</h3>
+            <p>Execução cuidadosa e técnica apurada para que o resultado seja sempre do seu agrado.</p>
+          </article>
+
+          <article class="diff-card">
+            <div class="diff-icon"><i data-lucide="armchair" aria-hidden="true"></i></div>
+            <h3>Ambiente Confortável</h3>
+            <p>Um espaço pensado para o seu conforto, do atendimento ao momento de relaxar.</p>
+          </article>
+
+          <article class="diff-card">
+            <div class="diff-icon"><i data-lucide="target" aria-hidden="true"></i></div>
+            <h3>Precisão nos Cortes</h3>
+            <p>Detalhes e linhas bem definidas, com acabamento cuidadoso em cada etapa.</p>
+          </article>
+
+          <article class="diff-card">
+            <div class="diff-icon"><i data-lucide="shield-check" aria-hidden="true"></i></div>
+            <h3>Higiene e Segurança</h3>
+            <p>Materiais higienizados e cuidados com a sua segurança durante todo o atendimento.</p>
+          </article>
+
+          <article class="diff-card">
+            <div class="diff-icon"><i data-lucide="sparkles" aria-hidden="true"></i></div>
+            <h3>Estilo e Modernidade</h3>
+            <p>Tendências e clássicos combinados para valorizar o seu visual com personalidade.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SOBRE A BARBEARIA
+    ============================================================ -->
+    <section class="about-section" id="sobre">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-image reveal-left">
+            <img src="assets/images/sobre/Sobre.jpg" alt="Estrutura e ambiente da Quirino Barbearia">
+            <div class="about-image-overlay" aria-hidden="true"></div>
+            <div class="about-frame" aria-hidden="true"></div>
+          </div>
+
+          <div class="about-content reveal-right">
+            <span class="about-tag">Sobre a Quirino Barbearia</span>
+            <h2>Cuidado e estilo em cada detalhe</h2>
+            <p>A Barbearia Quirino, localizada em Santa Felicidade, Curitiba, oferece serviços especializados em cuidados masculinos, com destaque para cortes tradicionais e modernos, degradê, fade e corte social, além de barba com navalha e cuidados capilares. O estabelecimento busca proporcionar atendimento de qualidade, aliando técnica, atenção aos detalhes e um serviço personalizado para cada cliente.</p>
+            <p>Mais do que um corte, entregamos confiança: você sai daqui com o visual alinhado ao seu estilo e com a sensação de ter sido bem atendido.</p>
+
+            <div class="about-highlights">
+              <div class="about-highlight-item">
+                <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                <span>Cortes personalizados</span>
+              </div>
+              <div class="about-highlight-item">
+                <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                <span>Barba com acabamento</span>
+              </div>
+              <div class="about-highlight-item">
+                <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                <span>Atendimento individual</span>
+              </div>
+              <div class="about-highlight-item">
+                <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                <span>Ambiente acolhedor</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EXPERIÊNCIA DO CLIENTE
+    ============================================================ -->
+    <section class="experience-section" id="experiencia">
+      <div class="container">
+        <div class="experience-grid">
+
+          <div class="experience-media reveal-left">
+            <!-- [INSERIR FOTO] Foto da experiência no ambiente da barbearia -->
+            <img src="assets/images/experiencia/experiencia-cliente.jpg" alt="Quirino — proprietário da Quirino Barbearia">
+            <div class="experience-quote">
+              Mais do que um corte. Um momento para cuidar do seu estilo.
+            </div>
+          </div>
+
+          <div class="experience-content reveal-right">
+            <span class="about-tag">Experiência do Cliente</span>
+            <h2>Um momento para cuidar do seu estilo</h2>
+            <p>Na Quirino Barbearia, o atendimento é feito para você se sentir bem do início ao fim — desde a recepção até o resultado final.</p>
+
+            <div class="experience-feature">
+              <div class="experience-feature-icon"><i data-lucide="scissors" aria-hidden="true"></i></div>
+              <div>
+                <strong>Corte sob medida</strong>
+                <span>Orientação para escolher o estilo que combina com você.</span>
+              </div>
+            </div>
+            <div class="experience-feature">
+              <div class="experience-feature-icon"><i data-lucide="watch" aria-hidden="true"></i></div>
+              <div>
+                <strong>Respeito ao seu tempo</strong>
+                <span>Atendimento organizado e sem pressa, com pontualidade.</span>
+              </div>
+            </div>
+            <div class="experience-feature">
+              <div class="experience-feature-icon"><i data-lucide="coffee" aria-hidden="true"></i></div>
+              <div>
+                <strong>Ambiente à vontade</strong>
+                <span>Um espaço confortável para relaxar durante o atendimento.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROCESSO — COMO FUNCIONA
+    ============================================================ -->
+    <section class="steps-section" id="processo">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="section-eyebrow">Atendimento</span>
+          <h2>Como funciona?</h2>
+          <p>Um processo simples e descomplicado, do momento em que você chega ao resultado final</p>
+        </div>
+
+        <div class="steps-grid">
+
+          <article class="step-item">
+            <span class="step-number">01</span>
+            <div class="step-icon"><i data-lucide="clipboard-list" aria-hidden="true"></i></div>
+            <h3>Escolha o serviço</h3>
+            <p>Corte, barba, combo ou outro cuidado. Escolha o que você precisa.</p>
+          </article>
+
+          <article class="step-item">
+            <span class="step-number">02</span>
+            <div class="step-icon"><i data-lucide="door-open" aria-hidden="true"></i></div>
+            <h3>Sem agendamento</h3>
+            <p>Não é preciso marcar horário: o atendimento é por ordem de chegada.</p>
+          </article>
+
+          <article class="step-item">
+            <span class="step-number">03</span>
+            <div class="step-icon"><i data-lucide="store" aria-hidden="true"></i></div>
+            <h3>Venha para a barbearia</h3>
+            <p>Dentro do horário de funcionamento, chegue e seja recebido com todo o cuidado.</p>
+          </article>
+
+          <article class="step-item">
+            <span class="step-number">04</span>
+            <div class="step-icon"><i data-lucide="sparkles" aria-hidden="true"></i></div>
+            <h3>Saia com seu novo visual</h3>
+            <p>Aproveite o resultado: estilo alinhado e confiança renovada.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVIÇOS
+    ============================================================ -->
+    <section class="services-section" id="servicos">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="section-eyebrow">Serviços</span>
+          <h2>Nossos <em>Serviços</em></h2>
+          <p>Cuidados pensados para o seu estilo e a sua rotina</p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Corte Masculino -->
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="scissors" aria-hidden="true"></i></div>
+            <h3>Corte Masculino</h3>
+            <p>Corte personalizado, do clássico ao moderno, com finalização e acabamento cuidadoso.</p>
+            <ul class="service-list">
+              <li>Corte ajustado ao seu estilo</li>
+              <li>Degradê e repicado</li>
+              <li>Acabamento na nuca e nas laterais</li>
+              <li>Finalização com produtos de qualidade</li>
+            </ul>
+          </article>
+
+          <!-- Barba -->
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="award" aria-hidden="true"></i></div>
+            <h3>Barba</h3>
+            <p>Modelagem e acabamento da barba com definição e atenção ao detalhe.</p>
+            <ul class="service-list">
+              <li>Desenho e modelagem</li>
+              <li>Acabamento com navalha</li>
+              <li>Alinhamento do contorno</li>
+              <li>Hidratação e cuidados</li>
+            </ul>
+          </article>
+
+          <!-- Combo Corte + Barba -->
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="flame" aria-hidden="true"></i></div>
+            <h3>Corte + Barba</h3>
+            <p>O combo completo para um visual harmônico, com corte e barba no mesmo atendimento.</p>
+            <ul class="service-list">
+              <li>Corte personalizado</li>
+              <li>Barba modelada e finalizada</li>
+              <li>Visual completo e alinhado</li>
+              <li>Otimização do seu tempo</li>
+            </ul>
+          </article>
+
+          <!-- Acabamento -->
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="sparkles" aria-hidden="true"></i></div>
+            <h3>Acabamento</h3>
+            <p>Detalhamento e finalização para um resultado impecável no corte ou na barba.</p>
+            <ul class="service-list">
+              <li>Contornos bem definidos</li>
+              <li>Acabamento na linha do cabelo</li>
+              <li>Finalização com estilo</li>
+              <li>Detalhes que fazem a diferença</li>
+            </ul>
+          </article>
+
+          <!-- Sobrancelha -->
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="eye" aria-hidden="true"></i></div>
+            <h3>Sobrancelha</h3>
+            <p>Design e acabamento masculino para valorizar o olhar com naturalidade.</p>
+            <ul class="service-list">
+              <li>Design e simetria</li>
+              <li>Limpeza sem exagero</li>
+              <li>Acabamento natural</li>
+              <li>Harmonia com o rosto</li>
+            </ul>
+          </article>
+
+          <!-- Lavagem / Finalização -->
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="droplets" aria-hidden="true"></i></div>
+            <h3>Lavagem / Finalização</h3>
+            <p>Complemente o cuidado com lavagem e finalização para terminar o visual.</p>
+            <ul class="service-list">
+              <li>Lavagem com produtos adequados</li>
+              <li>Finalização do penteado</li>
+              <li>Estilização do visual</li>
+              <li>Cuidado com fios e couro cabeludo</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PORTFÓLIO / GALERIA (COVERFLOW + LIGHTBOX)
+    ============================================================ -->
+    <section class="portfolio-section" id="galeria">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="section-eyebrow">Galeria</span>
+          <h2>Nosso <em>Trabalho</em></h2>
+          <p>Conheça o padrão e a qualidade dos nossos cortes e estilos</p>
+        </div>
+
+        <div class="gallery-filters" role="group" aria-label="Filtros da galeria">
+          <button type="button" class="filter-btn active" data-galeria-filtro="Todos" aria-pressed="true">Todos</button>
+          <button type="button" class="filter-btn" data-galeria-filtro="Corte" aria-pressed="false">Cortes</button>
+          <button type="button" class="filter-btn" data-galeria-filtro="Barba" aria-pressed="false">Barbas</button>
+          <button type="button" class="filter-btn" data-galeria-filtro="Combo" aria-pressed="false">Combos</button>
+          <button type="button" class="filter-btn" data-galeria-filtro="Estilo" aria-pressed="false">Estilos</button>
+        </div>
+
+        <div class="coverflow" id="coverflow" aria-label="Galeria de trabalhos da Quirino Barbearia">
+          <div class="coverflow-ambience" aria-hidden="true">
+            <img id="coverflow-bg" src="" alt="">
+            <div class="coverflow-ambience-overlay"></div>
+          </div>
+
+          <div class="coverflow-stage" id="coverflow-stage"></div>
+
+          <button class="coverflow-arrow prev" id="coverflow-prev" aria-label="Trabalho anterior">
+            <i data-lucide="chevron-left" aria-hidden="true"></i>
+          </button>
+          <button class="coverflow-arrow next" id="coverflow-next" aria-label="Próximo trabalho">
+            <i data-lucide="chevron-right" aria-hidden="true"></i>
+          </button>
+
+          <div class="coverflow-dots" id="coverflow-dots" role="tablist" aria-label="Navegar entre os trabalhos"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         LOCALIZAÇÃO E ATENDIMENTO
+    ============================================================ -->
+    <section class="coverage-section" id="atendimento">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="section-eyebrow">Atendimento</span>
+          <h2>Onde <em>estamos</em></h2>
+          <p id="coverage-text">[INSERIR ÁREA DE ATENDIMENTO]</p>
+        </div>
+
+        <div class="coverage-grid">
+
+          <div class="coverage-info">
+            <div class="coverage-info-item">
+              <div class="coverage-info-icon"><i data-lucide="map-pin" aria-hidden="true"></i></div>
+              <div class="coverage-info-text">
+                <h4>Localização</h4>
+                <p id="footer-endereco">[INSERIR ENDEREÇO] · [INSERIR CIDADE]</p>
+              </div>
+            </div>
+
+            <div class="coverage-info-item">
+              <div class="coverage-info-icon"><i data-lucide="clock" aria-hidden="true"></i></div>
+              <div class="coverage-info-text">
+                <h4>Horário de Funcionamento</h4>
+                <p id="badge-horario-2">[INSERIR HORÁRIO]</p>
+              </div>
+            </div>
+
+            <div class="coverage-info-item">
+              <div class="coverage-info-icon"><i data-lucide="phone" aria-hidden="true"></i></div>
+              <div class="coverage-info-text">
+                <h4>Telefone</h4>
+                <p><a href="#" class="js-phone">(41) 99520-5096</a></p>
+              </div>
+            </div>
+
+            <div class="coverage-info-item">
+              <div class="coverage-info-icon"><i data-lucide="message-circle" aria-hidden="true"></i></div>
+              <div class="coverage-info-text">
+                <h4>WhatsApp</h4>
+                <p><a href="#" id="coverage-whatsapp" onclick="falarPeloWhatsApp(); return false;">Tirar dúvidas pelo WhatsApp</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mapa: Rua José Valle, 1334 - Santa Felicidade, Curitiba -->
+          <div class="coverage-map">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-49.3232%2C-25.4062%2C-49.3032%2C-25.3942&layer=mapnik&marker=-25.4002%2C-49.3132"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa de localização da Quirino Barbearia"
+              allowfullscreen></iframe>
+            <a class="coverage-map-link" href="https://www.openstreetmap.org/?mlat=-25.4002&mlon=-49.3132#map=17/-25.4002/-49.3132" target="_blank" rel="noopener noreferrer">
+              Como chegar
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA FINAL
+    ============================================================ -->
+    <section class="final-cta">
+      <div class="container">
+        <h2>Seu próximo corte <em>começa aqui.</em></h2>
+        <p>Não trabalhamos com agendamento: o atendimento é por ordem de chegada. Venha cuidar do seu estilo.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       RODAPÉ
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="#inicio" class="footer-logo" aria-label="Página inicial — Quirino Barbearia">
+          <img class="logo-img" src="assets/images/logo/logoQuirino-transparent.png" alt="Logo Quirino Barbearia" width="533" height="419">
+        </a>
+        <p id="slogan-footer">Cortes masculinos, barba e cuidados para quem valoriza seu estilo.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Rodapé — Navegação">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#atendimento">Atendimento</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col footer-contato">
+        <h4>Contato</h4>
+        <ul>
+          <li>
+            <i data-lucide="message-circle" aria-hidden="true"></i>
+            <a href="#" id="footer-whatsapp-link" onclick="falarPeloWhatsApp(); return false;">Atendimento via WhatsApp</a>
+          </li>
+          <li>
+            <i data-lucide="phone" aria-hidden="true"></i>
+            <a href="#" class="js-phone">(41) 99520-5096</a>
+          </li>
+          <li>
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+            <span id="footer-endereco-2">[INSERIR ENDEREÇO]</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-contato">
+        <h4>Redes Sociais</h4>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/quirino.barbearia/" id="footer-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Quirino Barbearia">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="ano-atual">2026</span> <span id="copyright-nome">Quirino Barbearia</span>. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BOTÃO FLUTUANTE DE AVALIAÇÃO NO GOOGLE
+  ============================================================ -->
+  <a href="#" id="google-float" class="google-float js-avaliar" aria-label="Avaliar a Quirino Barbearia no Google" onclick="avaliarQuirino(); return false;">
+    <span class="google-float-tip">Nos avalie no Google</span>
+    <i data-lucide="star" aria-hidden="true"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
