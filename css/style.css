@@ -1419,6 +1419,14 @@ header.glass {
   line-height: 1.65;
 }
 
+.service-price {
+  color: var(--gold);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0.2px;
+}
+
 .service-list {
   margin-bottom: 24px;
   flex-grow: 1;
