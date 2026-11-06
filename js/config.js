@@ -31,8 +31,8 @@ const CONFIG = {
   atendimento: "Santa Felicidade, Curitiba", // Ex.: Curitiba
 
   /* Funcionamento -------------------------------------------------------- */
-  horario: "Seg a Sex: 09h às 19h | Sáb: 09h às 17h30 | Dom: fechado", // horário completo (seção Onde estamos)
-  horarioResumo: "Seg a Sex 09h–19h · Sáb 09h–17h30", // horário resumido (badge do Hero)
+  horario: "Seg: 10h às 19h | Ter a Sex: 09h às 19h | Sáb: 09h às 17h30 | Dom: fechado", // horário completo (seção Onde estamos)
+  horarioResumo: "Seg: 10h–19h · Ter a Sex: 09h–19h · Sáb: 09h–17h30", // horário resumido (badge do Hero)
 
   /* Redes Sociais -------------------------------------------------------- */
   instagram: "https://www.instagram.com/barbearia.quirino/",
