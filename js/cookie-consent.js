@@ -4,7 +4,7 @@
    Substitua GA_MEASUREMENT_ID pelo seu ID do Google Analytics 4 (ex: G-XXXXXXXXXX)
    ========================================================================== */
 
-const GA_MEASUREMENT_ID = "G-XXXXXXXXXX"; // <-- ALTERNE AQUI SEU ID DO GA4
+const GA_MEASUREMENT_ID = "G-NFJFE2Q8B6"; // ID do Google Analytics 4 configurado
 
 const COOKIE_NAME = "quirino_cookie_consent";
 const CONSENT_GRANTED = "granted";
